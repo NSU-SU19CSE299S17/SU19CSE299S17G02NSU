@@ -2,15 +2,26 @@
 .navbar {
     margin-bottom: 0;
     border-radius: 0;
+
     padding: 30px;
     padding-left: 0px;
     padding-bottom: 0px;
+
     background-color: darkslategray;
     border-bottom-color: white;
     border-bottom-width: 1px;
     border-bottom-style: solid;
 
 }
+
+.topnav-right {
+    float: right;
+  }
+  /* Add a color to the active/current link */
+.topnav-right a.active {
+    background-color: #4CAF50;
+    color: white;
+  }
 
 .logo {
     font-family: 'Times New Roman', Times, serif;
