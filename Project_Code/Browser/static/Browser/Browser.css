@@ -2,17 +2,22 @@
 .navbar {
     margin-bottom: 0;
     border-radius: 0;
-    padding: 60px;
+    padding: 30px;
+    padding-left: 0px;
     padding-bottom: 0px;
     background-color: darkslategray;
+    border-bottom-color: white;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
 
 }
 
 .logo {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 50px;
-    padding: 20px;
-    padding-bottom: 40px;
+    font-size: 45px;
+    padding-top: 0px;
+    padding-bottom: 50px;
+    padding-left: 0px;
     color: white;
     font-style: italic;
     font-weight: bold;
@@ -21,3 +26,34 @@
 .logo:hover {
     color: peachpuff;
 }
+
+/* Set height of the grid so .sidenav can be 100% (adjust as needed) */
+.row.content {height: 600px}
+  
+/* Set gray background color and 100% height      #f1f1f1; */
+    .sidenav {
+        padding-top: 100px;
+        background-color:darkslategray;
+
+        height: 100%;
+    }
+
+
+     /* On mouse-over */
+   .dropdown-btn:hover {
+    color: #94c0f1;
+ }
+
+
+ .green{
+    background-color:#2c8a43;
+ }
+
+  .thumb{
+      margin-bottom: 30px;
+  }
+          
+  .page-top{
+      margin-top:85px;
+  }
+  
