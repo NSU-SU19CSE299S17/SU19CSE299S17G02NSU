@@ -14,14 +14,13 @@
 
 }
 
+
+/* Right-aligned section inside the top navigation */
 .topnav-right {
-    float: right;
-  }
-  /* Add a color to the active/current link */
-.topnav-right a.active {
-    background-color: #4CAF50;
-    color: white;
-  }
+  float: right;
+ 
+}
+
 
 .logo {
     font-family: 'Times New Roman', Times, serif;
