@@ -10,10 +10,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf>
-      <file pinned="false" current-in-tab="false">
+      <file pinned="false" current-in-tab="true">
         <entry file="file://$PROJECT_DIR$/Homepage/static/Homepage/index.css">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="1513">
+            <state relative-caret-position="415">
               <caret line="89" column="1" selection-start-line="89" selection-start-column="1" selection-end-line="89" selection-end-column="1" />
             </state>
           </provider>
@@ -31,10 +31,10 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Homepage/templates/Homepage/index.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="392">
+            <state relative-caret-position="2057">
               <caret line="121" selection-start-line="121" selection-end-line="121" />
             </state>
           </provider>
@@ -48,8 +48,8 @@
   <component name="IdeDocumentHistory">
     <option name="CHANGED_PATHS">
       <list>
-        <option value="$PROJECT_DIR$/Homepage/static/Homepage/index.css" />
         <option value="$PROJECT_DIR$/Homepage/templates/Homepage/index.html" />
+        <option value="$PROJECT_DIR$/Homepage/static/Homepage/index.css" />
       </list>
     </option>
   </component>
@@ -227,17 +227,17 @@
     <entry file="file://$PROJECT_DIR$/Browser/static/Browser/Browser.css">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
-    <entry file="file://$PROJECT_DIR$/Homepage/static/Homepage/index.css">
+    <entry file="file://$PROJECT_DIR$/Homepage/templates/Homepage/index.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="1513">
-          <caret line="89" column="1" selection-start-line="89" selection-start-column="1" selection-end-line="89" selection-end-column="1" />
+        <state relative-caret-position="2057">
+          <caret line="121" selection-start-line="121" selection-end-line="121" />
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Homepage/templates/Homepage/index.html">
+    <entry file="file://$PROJECT_DIR$/Homepage/static/Homepage/index.css">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="392">
-          <caret line="121" selection-start-line="121" selection-end-line="121" />
+        <state relative-caret-position="415">
+          <caret line="89" column="1" selection-start-line="89" selection-start-column="1" selection-end-line="89" selection-end-column="1" />
         </state>
       </provider>
     </entry>
