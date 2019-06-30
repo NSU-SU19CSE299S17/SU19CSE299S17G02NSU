@@ -1,3 +1,14 @@
 from django.db import models
 
-# Create your models here.
+class Books(models.Model):
+
+    Book_ID = models.IntegerField(primary_key=True)
+    Title  = models.CharField(max_length=150)
+    Author = models.CharField(max_length=150)
+    Genre1 = models.CharField(max_length=150)
+    Genre2 = models.CharField(max_length=150)
+    Plot   = models.TextField()
+
+
+def __str__(self):
+    return self.title
