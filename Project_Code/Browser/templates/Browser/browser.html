@@ -4,32 +4,33 @@
     <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
     integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
     crossorigin="anonymous">
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+    <!--adding js scripts-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
 
-    <!--  Loads the path to static files-->
+<!--  Loads the path to static files-->
 {% load staticfiles %}
 <link rel="stylesheet" type="text/css"  href="{% static 'Browser/Browser.css' %}"
 
 </head>
 
 <body>
-    <nav class="navbar ">
+    <nav class="navbar navbar-inverse ">
 
         <div class="container-fluid">
              
             <div class="navbar-header">
                     <a class="logo" href="../../../Homepage/templates/Homepage/index.html">Bookworm</a>
             </div>
-             
-            <div class="collapse navbar-collapse " id="myNavbar">
-             
-                    <ul class="nav navbar navbar-right">
-                         <li class="active"><a href="#">Home</a></li>
-                         <li><a href="#">Go to Profile</a></li>
-                    </ul>
-             
-            </div>
-             
+
+                 <div class=" topnav-right" >
+                    <button href="#" style="color: white; background: transparent" >Home</button>
+                    <button href="#" style="color: white; background: transparent">Go to Profile</button>
+                    <button href="#" style="color: white; background: transparent">Upgrade to pro</button>
+                  </div>
         </div>
+
      </nav>
 
      <div class="container-fluid text-center">    
