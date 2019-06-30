@@ -1,3 +1,6 @@
+<html>
+<h1 style ="font size: 60px", "color:white;">Welcmome to Bookworm</h1>
+</html>
 body {
   background: #212121;
   font-family: Helvetica, sans-serif;
@@ -88,3 +91,13 @@ input[type="radio"]:checked + .coverflow-item ~ .coverflow-item {
   -webkit-transform: rotateY(-45deg);
   background: #515151;
 }
+/*@keyframes cover-forward {
+  0% { transform: rotateY( 45deg ); }
+  50% { transform: rotateY( 0deg ) translate3d( 60px,0,0 ) scale3d(1.2,1.2,1.2); z-index:999; }
+  100% { transform: rotateY( 45deg ) translate3d( 0,0,0 ) scale3d(1,1,1); }
+}
+
+@keyframes cover-return {
+  0% { transform: rotateY( 45deg ); }
+  100% { transform: rotateY( 0deg ) translate3d( 150px,0,0 ) scale3d(1.2,1.2,1.2); }
+}*/
