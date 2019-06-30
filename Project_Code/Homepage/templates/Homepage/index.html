@@ -7,12 +7,134 @@
         
 <!--  Loads the path to static files-->
 {% load staticfiles %}
-<link rel="stylesheet" type="text/css"  href="{% static 'Homepage/index.css' %}"
-
+<!DOCTYPE html>
+<html lang="en">
+<head>
+<meta charset="UTF-8">
+<link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
+<link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
+<title>CodePen - CSS 3D Coverflow</title>
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+<link rel="stylesheet" type="text/css" href="{% static 'index.css' %}">
+<script>
+  window.console = window.console || function(t) {};
+</script>
+<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+<script>
+  if (document.location.search.match(/type=embed/gi)) {
+    window.parent.postMessage("resize", "*");
+  }
+</script>
 </head>
-<body>
+<body translate="no">
 
-   <h2> Welcome to Bookworm homepage</h2> 
+<div class="main-container">
+<div class="coverflow-container">
+<ol class="coverflow-list">
+
+<input type="radio" name="cover-item" id="cover-1">
+<li class="coverflow-item">
+<label for="cover-1">
+<figure class="album-cover">
+<img src="https://www.degouges.com/wp-content/uploads/2018/04/2018-04-03-01.12.22-1-768x576.jpg">
+<figcaption class="album-name">Hunger Makes Me a Modern Girl</figcaption>
+</figure>
+</label>
+</li>
+
+<input type="radio" name="cover-item" id="cover-2">
+<li class="coverflow-item">
+<label for="cover-2">
+<figure class="album-cover">
+<img src="https://blondebeetnirvana.com/wp-content/uploads/2018/04/MarkMansonOnNotGivingAFck-e1523923607866.jpg" />
+<figcaption class="album-name">The Subtle Art of Not Giving a F*ck</figcaption>
+</figure>
+</label>
+</li>
+
+<input type="radio" name="cover-item" id="cover-3">
+<li class="coverflow-item">
+<label for="cover-3">
+<figure class="album-cover">
+<img src="https://media-market.edmodo.com/media/public/f26882dc15733fefc4f8b7114b11a1e114feb20c.jpg">
+<figcaption class="album-name">Pride and Prejudice</figcaption>
+</figure>
+</label>
+</li>
+
+<input type="radio" name="cover-item" id="cover-4">
+<li class="coverflow-item">
+<label for="cover-4">
+<figure class="album-cover">
+<img src="https://images-na.ssl-images-amazon.com/images/I/41s4xJZlEYL.jpg">
+<figcaption class="album-name">Man's Search For Meaning</figcaption>
+</figure>
+</label>
+</li>
+
+<input type="radio" name="cover-item" id="cover-5">
+<li class="coverflow-item">
+<label for="cover-5">
+<figure class="album-cover">
+<img src="https://dynamic.indigoimages.ca/books/0735253307.jpg?altimages=false&scaleup=true&maxheight=515&width=380&quality=85&sale=16&lang=en">
+<figcaption class="album-name">The Handmaid's Tale</figcaption>
+</figure>
+</label>
+</li>
+
+<input type="radio" name="cover-item" id="cover-6">
+<li class="coverflow-item">
+<label for="cover-6">
+<figure class="album-cover">
+<img src="https://media.bloomsbury.com/rep/bj/9781350033221.jpg">
+<figcaption class="album-name">The Kite Runner</figcaption>
+</figure>
+</label>
+</li>
+
+<input type="radio" name="cover-item" id="cover-7">
+<li class="coverflow-item">
+<label for="cover-7">
+<figure class="album-cover">
+<img src="https://images-na.ssl-images-amazon.com/images/I/41-2DNxyKyL._SX351_BO1,204,203,200_.jpg">
+<figcaption class="album-name">Shoe Dog</figcaption>
+</figure>
+</label>
+</li>
+
+<input type="radio" name="cover-item" id="cover-8">
+<li class="coverflow-item">
+<label for="cover-8">
+<figure class="album-cover">
+<img src="https://images-na.ssl-images-amazon.com/images/I/41W9YpbHNbL.jpg">
+<figcaption class="album-name">The Moment of Lift</figcaption>
+    <p>How Empowering Women Changes the World </p>
+</figure>
+</label>
+</li>
+
+<input type="radio" name="cover-item" id="cover-9">
+<li class="coverflow-item">
+<label for="cover-9">
+<figure class="album-cover">
+<img src="https://www.chestnuthilllocal.com/wp-content/uploads/2019/03/Column_Gilmore.jpg">
+<figcaption class="album-name">Educated : A Memoir </figcaption>
+</figure>
+</label>
+</li>
+</ol>
+</div>
+<div class="controls">
+<label for="cover-1">1</label>
+<label for="cover-2">2</label>
+<label for="cover-3">3</label>
+<label for="cover-4">4</label>
+<label for="cover-5">5</label>
+<label for="cover-6">6</label>
+<label for="cover-7">7</label>
+<label for="cover-8">8</label>
+<label for="cover-9">9</label>
+</div>
+</div>
 </body>
-
 </html>
