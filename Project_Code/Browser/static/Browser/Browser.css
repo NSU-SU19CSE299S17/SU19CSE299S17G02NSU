@@ -2,15 +2,25 @@
 .navbar {
     margin-bottom: 0;
     border-radius: 0;
+
     padding: 30px;
     padding-left: 0px;
     padding-bottom: 0px;
+
     background-color: darkslategray;
     border-bottom-color: white;
     border-bottom-width: 1px;
     border-bottom-style: solid;
 
 }
+
+
+/* Right-aligned section inside the top navigation */
+.topnav-right {
+  float: right;
+ 
+}
+
 
 .logo {
     font-family: 'Times New Roman', Times, serif;
