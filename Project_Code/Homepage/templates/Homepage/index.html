@@ -1,32 +1,32 @@
 <html>
+  
 <head>
-<!--
-        <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-        integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-        crossorigin="anonymous">-->
-        
-<!--  Loads the path to static files-->
-{% load staticfiles %}
-	<link rel="stylesheet" type="text/css"  href="{% static 'index/index.css' %}"
-</head>
 
-	<h1> Welcome To Bookworm </h1>
-<meta charset="UTF-8">
+    <h1> Welcome To Bookworm </h1>
+    <meta charset="UTF-8">
+    <!--  Loads the path to static files-->
+      {% load staticfiles %}
+      <link rel="stylesheet" type="text/css"  href="{% static 'Homepage/index.css' %}"
+
 <link rel="shortcut icon" type="image/x-icon" href="https://static.codepen.io/assets/favicon/favicon-aec34940fbc1a6e787974dcd360f2c6b63348d4b1f4e06c77743096d55480f33.ico" />
 <link rel="mask-icon" type="" href="https://static.codepen.io/assets/favicon/logo-pin-8f3771b1072e3c38bd662872f6b673a722f4b3ca2421637d5596661b4e2132cc.svg" color="#111" />
+
 <title>CodePen - CSS 3D Coverflow</title>
 <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
-<link rel="stylesheet" type="text/css" href="index.css">
-<script>
-  window.console = window.console || function(t) {};
-</script>
-<script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
-<script>
-  if (document.location.search.match(/type=embed/gi)) {
-    window.parent.postMessage("resize", "*");
-  }
-</script>
+
+
+    <script>
+         window.console = window.console || function(t) {};
+    </script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+    <script>
+        if (document.location.search.match(/type=embed/gi)) {
+              window.parent.postMessage("resize", "*");    }
+    </script>
+
 </head>
+
+
 <body translate="no">
 
 
@@ -36,181 +36,196 @@
 
 <h1> Here are some books that you might be interested in: </h1>
 
-	<input type="radio" name="cover-item" id="cover-1">
-	<li class="coverflow-item">
-		<label for="cover-1">
-			<figure class="album-cover">
-				<img src="https://blondebeetnirvana.com/wp-content/uploads/2018/04/MarkMansonOnNotGivingAFck-e1523923607866.jpg" />
-				<figcaption class="album-name">The Subtle Art of Not Giving a F*ck</figcaption>
-			</figure>
-		</label>
-	</li>
+<input type="radio" name="cover-item" id="cover-1">
+<li class="coverflow-item">
+<label for="cover-1">
+<figure class="album-cover">
+<img src="https://blondebeetnirvana.com/wp-content/uploads/2018/04/MarkMansonOnNotGivingAFck-e1523923607866.jpg" />
+<figcaption class="album-name">The Subtle Art of Not Giving a F*ck</figcaption>
+</figure>
+</label>
+</li>
 
-	<input type="radio" name="cover-item" id="cover-2">
-	<li class="coverflow-item">
-		<label for="cover-2">
-			<figure class="album-cover">
-				<img src="https://media-market.edmodo.com/media/public/f26882dc15733fefc4f8b7114b11a1e114feb20c.jpg">
-				<figcaption class="album-name">Pride and Prejudice</figcaption>
-			</figure>
-		</label>
-	</li>
+<input type="radio" name="cover-item" id="cover-2">
+<li class="coverflow-item">
+<label for="cover-2">
+<figure class="album-cover">
+<img src="https://media-market.edmodo.com/media/public/f26882dc15733fefc4f8b7114b11a1e114feb20c.jpg">
+<figcaption class="album-name">Pride and Prejudice</figcaption>
+</figure>
+</label>
+</li>
 
-	<input type="radio" name="cover-item" id="cover-3">
-	<li class="coverflow-item">
-		<label for="cover-3">
-			<figure class="album-cover">
-				<img src="https://images-na.ssl-images-amazon.com/images/I/41s4xJZlEYL.jpg">
-				<figcaption class="album-name">Man's Search For Meaning</figcaption>
-			</figure>
-		</label>
-	</li>
+<input type="radio" name="cover-item" id="cover-3">
+<li class="coverflow-item">
+<label for="cover-3">
+<figure class="album-cover">
+<img src="https://images-na.ssl-images-amazon.com/images/I/41s4xJZlEYL.jpg">
+<figcaption class="album-name">Man's Search For Meaning</figcaption>
+</figure>
+</label>
+</li>
 
 <input type="radio" name="cover-item" id="cover-4">
-	<li class="coverflow-item">
-		<label for="cover-4">
-			<figure class="album-cover">
-				<img src="https://dynamic.indigoimages.ca/books/0735253307.jpg?altimages=false&scaleup=true&maxheight=515&width=380&quality=85&sale=16&lang=en">
-				<figcaption class="album-name">The Handmaid's Tale</figcaption>
-			</figure>
-		</label>
-	</li>
+<li class="coverflow-item">
+<label for="cover-4">
+<figure class="album-cover">
+<img src="https://dynamic.indigoimages.ca/books/0735253307.jpg?altimages=false&scaleup=true&maxheight=515&width=380&quality=85&sale=16&lang=en">
+<figcaption class="album-name">The Handmaid's Tale</figcaption>
+</figure>
+</label>
+</li>
 
 <input type="radio" name="cover-item" id="cover-5">
-	<li class="coverflow-item">
-		<label for="cover-5">
-			<figure class="album-cover">
-				<img src="https://media.bloomsbury.com/rep/bj/9781350033221.jpg">
-				<figcaption class="album-name">The Kite Runner</figcaption>
-			</figure>
-		</label>
-	</li>
+<li class="coverflow-item">
+<label for="cover-5">
+<figure class="album-cover">
+<img src="https://media.bloomsbury.com/rep/bj/9781350033221.jpg">
+<figcaption class="album-name">The Kite Runner</figcaption>
+</figure>
+</label>
+</li>
 
 <input type="radio" name="cover-item" id="cover-6">
-	<li class="coverflow-item">
-		<label for="cover-6">
-			<figure class="album-cover">
-				<img src="https://images-na.ssl-images-amazon.com/images/I/41-2DNxyKyL._SX351_BO1,204,203,200_.jpg">
-				<figcaption class="album-name">Shoe Dog</figcaption>
-			</figure>
-		</label>
-	</li>
+<li class="coverflow-item">
+<label for="cover-6">
+<figure class="album-cover">
+<img src="https://images-na.ssl-images-amazon.com/images/I/41-2DNxyKyL._SX351_BO1,204,203,200_.jpg">
+<figcaption class="album-name">Shoe Dog</figcaption>
+</figure>
+</label>
+</li>
 
 
 <input type="radio" name="cover-item" id="cover-7">
-	<li class="coverflow-item">
-		<label for="cover-7">
-			<figure class="album-cover">
-				<img src="https://www.chestnuthilllocal.com/wp-content/uploads/2019/03/Column_Gilmore.jpg">
-				<figcaption class="album-name">Educated : A Memoir </figcaption>
-			</figure>
-		</label>
-	</li>
+<li class="coverflow-item">
+<label for="cover-7">
+<figure class="album-cover">
+<img src="https://www.chestnuthilllocal.com/wp-content/uploads/2019/03/Column_Gilmore.jpg">
+<figcaption class="album-name">Educated : A Memoir </figcaption>
+</figure>
+</label>
+</li>
 </ol>
 </div>
-	<div class="controls">
-		<label for="cover-1">1</label>
-		<label for="cover-2">2</label>
-        <label for="cover-3">3</label>
-        <label for="cover-4">4</label>
-		<label for="cover-5">5</label>
-        <label for="cover-6">6</label>
-		<label for="cover-7">7</label>
-	</div>
+<div class="controls">
+<label for="cover-1">1</label>
+<label for="cover-2">2</label>
+<label for="cover-3">3</label>
+<label for="cover-4">4</label>
+<label for="cover-5">5</label>
+<label for="cover-6">6</label>
+<label for="cover-7">7</label>
+
+</div>
 </div>
 </body>
+</html>
 <body translate="no">
+
+
 <div class="main-container">
-	<div class="coverflow-container">
-	<ol class="coverflow-list">
-		<h1> Award Winning Books of 2018: </h1>
-		<input type="radio" name="cover-item" id="cover-8">
-		<li class="coverflow-item">
-			<label for="cover-8">
-				<figure class="album-cover">
-					<img src="https://images-na.ssl-images-amazon.com/images/I/412Vb-C3--L._SX336_BO1,204,203,200_.jpg" />
-					<figcaption class="album-name">A Lucky Man </figcaption>
-					<figcaption class="author--name">Jamel Brinkley</figcaption>
-				</figure>
-			</label>
-		</li>
+<div class="coverflow-container">
+<ol class="coverflow-list">
 
-		<input type="radio" name="cover-item" id="cover-9">
-		<li class="coverflow-item">
-			<label for="cover-9">
-				<figure class="album-cover">
-					<img src="https://images-na.ssl-images-amazon.com/images/I/619FCk3MHwL._SX339_BO1,204,203,200_.jpg">
-					<figcaption class="album-name">Gun Love</figcaption>
-					<figcaption class="author--name">Jennifer Clement</figcaption>
-				</figure>
-			</label>
-		</li>
+<h1> Award Winning Books of 2018: </h1>
 
-		<input type="radio" name="cover-item" id="cover-10">
-		<li class="coverflow-item">
-			<label for="cover-10">
-				<figure class="album-cover">
-					<img src="https://images-na.ssl-images-amazon.com/images/I/51bXQzJhvcL._SX318_BO1,204,203,200_.jpg">
-					<figcaption class="album-name">Florida</figcaption>
-					<figcaption class="author-name">Lauren Grof</figcaption>
-				</figure>
-			</label>
-		</li>
+<input type="radio" name="cover-item" id="cover-8">
+<li class="coverflow-item">
+<label for="cover-8">
+<figure class="album-cover">
+<img src="https://images-na.ssl-images-amazon.com/images/I/412Vb-C3--L._SX336_BO1,204,203,200_.jpg" />
+<figcaption class="album-name">A Lucky Man </figcaption>
+<figcaption class="author--name">Jamel Brinkley</figcaption>
 
-		<input type="radio" name="cover-item" id="cover-11">
-		<li class="coverflow-item">
-			<label for="cover-11">
-				<figure class="album-cover">
-					<img src="https://images-na.ssl-images-amazon.com/images/I/41lyVA8rRkL._SX346_BO1,204,203,200_.jpg">
-					<figcaption class="album-name">The Boatbulder</figcaption>
-					<figcaption class="author-name">Danile Gumbiner</figcaption>
+</figure>
+</label>
+</li>
 
-				</figure>
-			</label>
-		</li>
+<input type="radio" name="cover-item" id="cover-9">
+<li class="coverflow-item">
+<label for="cover-9">
+<figure class="album-cover">
+<img src="https://images-na.ssl-images-amazon.com/images/I/619FCk3MHwL._SX339_BO1,204,203,200_.jpg">
+<figcaption class="album-name">Gun Love</figcaption>
+<figcaption class="author--name">Jennifer Clement</figcaption>
 
-		<input type="radio" name="cover-item" id="cover-12">
-		<li class="coverflow-item">
-			<label for="cover-12">
-				<figure class="album-cover">
-					<img src="https://images-na.ssl-images-amazon.com/images/I/51R5OTD%2B-KL._SX331_BO1,204,203,200_.jpg">
-					<figcaption class="album-name">Where the Dead Sit Talking</figcaption>
-					<figcaption class="author-name">Brandon Hobson</figcaption>
+</figure>
+</label>
+</li>
 
-				</figure>
-			</label>
-		</li>
-		<input type="radio" name="cover-item" id="cover-13">
-		<li class="coverflow-item">
-			<label for="cover-13">
-				<figure class="album-cover">
-					<img src="https://images-na.ssl-images-amazon.com/images/I/51RuAbKH%2BtL._SX326_BO1,204,203,200_.jpg">
-					<figcaption class="album-name">There There</figcaption>
-					<figcaption class="author-name">Tommy Orange </figcaption>
-				</figure>
-			</label>
-		</li>
-		<input type="radio" name="cover-item" id="cover-14">
-		<li class="coverflow-item">
-			<label for="cover-14">
-				<figure class="album-cover">
-					<img src="https://images-na.ssl-images-amazon.com/images/I/51e7ARPjDNL._SX328_BO1,204,203,200_.jpg">
-					<figcaption class="album-name">The Great Believers</figcaption>
-					<figcaption class="author-name">Rebecca Makkai</figcaption>
-				</figure>
-			</label>
-		</li>
-	</ol>
-	</div>
-	<div class="controls">
-		<label for="cover-8">1</label>
-		<label for="cover-9">2</label>
-        <label for="cover-10">3</label>
-        <label for="cover-11">4</label>
-		<label for="cover-12">5</label>
-		<label for="cover-13">6</label>
-		<label for="cover-14">7</label>
-	</div>
+<input type="radio" name="cover-item" id="cover-10">
+<li class="coverflow-item">
+<label for="cover-10">
+<figure class="album-cover">
+<img src="https://images-na.ssl-images-amazon.com/images/I/51bXQzJhvcL._SX318_BO1,204,203,200_.jpg">
+<figcaption class="album-name">Florida</figcaption>
+<figcaption class="author-name">Lauren Grof</figcaption>
+
+</figure>
+</label>
+</li>
+
+<input type="radio" name="cover-item" id="cover-11">
+<li class="coverflow-item">
+<label for="cover-11">
+<figure class="album-cover">
+<img src="https://images-na.ssl-images-amazon.com/images/I/41lyVA8rRkL._SX346_BO1,204,203,200_.jpg">
+<figcaption class="album-name">The Boatbulder</figcaption>
+<figcaption class="author-name">Danile Gumbiner</figcaption>
+
+</figure>
+</label>
+</li>
+
+<input type="radio" name="cover-item" id="cover-12">
+<li class="coverflow-item">
+<label for="cover-12">
+<figure class="album-cover">
+<img src="https://images-na.ssl-images-amazon.com/images/I/51R5OTD%2B-KL._SX331_BO1,204,203,200_.jpg">
+<figcaption class="album-name">Where the Dead Sit Talking</figcaption>
+<figcaption class="author-name">Brandon Hobson</figcaption>
+
+</figure>
+</label>
+</li>
+<input type="radio" name="cover-item" id="cover-13">
+<li class="coverflow-item">
+<label for="cover-13">
+<figure class="album-cover">
+<img src="https://images-na.ssl-images-amazon.com/images/I/51RuAbKH%2BtL._SX326_BO1,204,203,200_.jpg">
+<figcaption class="album-name">There There</figcaption>
+<figcaption class="author-name">Tommy Orange </figcaption>
+
+
+</figure>
+</label>
+</li>
+<input type="radio" name="cover-item" id="cover-14">
+<li class="coverflow-item">
+<label for="cover-14">
+<figure class="album-cover">
+<img src="https://images-na.ssl-images-amazon.com/images/I/51e7ARPjDNL._SX328_BO1,204,203,200_.jpg">
+<figcaption class="album-name">The Great Believers</figcaption>
+<figcaption class="author-name">Rebecca Makkai</figcaption>
+
+</figure>
+</label>
+</li>
+
+</ol>
+</div>
+<div class="controls">
+<label for="cover-8">1</label>
+<label for="cover-9">2</label>
+<label for="cover-10">3</label>
+<label for="cover-11">4</label>
+<label for="cover-12">5</label>
+<label for="cover-13">6</label>
+<label for="cover-14">7</label>
+
+</div>
 </div>
 </body>
+
 </html>
