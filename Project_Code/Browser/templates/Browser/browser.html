@@ -1,45 +1,56 @@
 <html>
 <head>
-    <!-- Importing bootstrap stylesheet-->
-    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.3.1/css/bootstrap.min.css"
-    integrity="sha384-ggOyR0iXCbMQv3Xipma34MD+dH/1fQ784/j6cY/iJTQUOhcWr7x9JvoRxT2MZw1T"
-    crossorigin="anonymous">
+    <!--  Loads the path to static files-->
+{% load staticfiles %}
+<link rel="stylesheet" type="text/css"  href="{% static 'Browser/Browser.css' %}"
+
+   
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
     <!--adding js scripts-->
     <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
-   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>  
 
-<!--  Loads the path to static files-->
-{% load staticfiles %}
-<link rel="stylesheet" type="text/css"  href="{% static 'Browser/Browser.css' %}"
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+<script>
+        window.console = window.console || function(t) {};
+   </script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+   <script>
+       if (document.location.search.match(/type=embed/gi)) {
+             window.parent.postMessage("resize", "*");    }
+   </script>
+
+
 
 </head>
 
 <body>
-    <nav class="navbar navbar-inverse ">
-
+    <nav class="navbar navbar-fixed-top navbar-default navbar-inverse ">
         <div class="container-fluid">
              
             <div class="navbar-header">
-                    <a class="logo" href="../../../Homepage/templates/Homepage/index.html">Bookworm</a>
-            </div>
+                    <a class="logo" >Bookworm</a>
+             </div>
 
-                 <div class=" topnav-right" >
-                    <button href="#" style="color: white; background: transparent" >Home</button>
-                    <button href="#" style="color: white; background: transparent">Go to Profile</button>
-                    <button href="#" style="color: white; background: transparent">Upgrade to pro</button>
+             <div class=" nav-btns topnav-right" >
+                    <button href="#" style="color: white; background: transparent; " >Home</button>
+                    <button href="#" style="color: white; background: transparent; ">Profile</button>
+                    <button href="#" style="color: white; background: transparent; ">Upgrade to pro</button>
                   </div>
+                
         </div>
-
-     </nav>
+</nav>
 
      <div class="container-fluid text-center">    
         <div class="row content">
-                <div class="col-sm-2 sidenav">
-           
+                <div class="col-sm-3 sidenav">
+
+                 <h3 style="color: white;">AD content</h3>
                  </div>
     
-                <div class="col-sm-10 text-left"> 
+                <div class="col-sm-9 text-left main"> 
 
                     <div id="custom-search-input">
 

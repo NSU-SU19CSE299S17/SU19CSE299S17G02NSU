@@ -2,52 +2,72 @@
 .navbar {
     margin-bottom: 0;
     border-radius: 0;
-
+  
     padding: 30px;
     padding-left: 0px;
-    padding-bottom: 0px;
-
-    background-color: darkslategray;
-    border-bottom-color: white;
+    padding-bottom: 30px;
+  
+    background-color:   rgb(6, 36, 36); 
+     border-bottom-color: white;
     border-bottom-width: 1px;
-    border-bottom-style: solid;
-
-}
-
-
-/* Right-aligned section inside the top navigation */
-.topnav-right {
-  float: right;
- 
-}
-
-
-.logo {
+    border-bottom-style: solid; 
+   
+  
+  }
+  
+  /* Right-aligned section inside the top navigation */
+  .topnav-right {
+  float:right;
+  
+  }
+  
+  .nav-btns {
+    padding-right: 30px;
+   
+  }
+  
+  
+  .logo {
     font-family: 'Times New Roman', Times, serif;
-    font-size: 45px;
+    font-size: 60px;
     padding-top: 0px;
-    padding-bottom: 50px;
-    padding-left: 0px;
+    padding-bottom: 30px;
+    padding-left: 35px;
     color: white;
     font-style: italic;
     font-weight: bold;
-
-}
-.logo:hover {
+  
+  }
+  .logo:hover {
     color: peachpuff;
-}
+  }
+  
+
+
 
 /* Set height of the grid so .sidenav can be 100% (adjust as needed) */
-.row.content {height: 600px}
+.row.content { height: 600px;
+}
   
-/* Set gray background color and 100% height      #f1f1f1; */
-    .sidenav {
+/* Set gray background color and 100% height   */
+   /* .sidenav {
         padding-top: 100px;
-        background-color:darkslategray;
-
-        height: 100%;
+        background-color: rgb(6, 36, 36); 
+         height: 70%;
     }
 
+*/
+.sidenav {
+    height: 100%; /* Full-height: remove this if you want "auto" height */
+    width: 250px; /* Set the width of the sidebar */
+    position: fixed;  /*Fixed Sidebar (stay in place on scroll) */
+    z-index: -1; /* Stay on top */
+    top: 0; /* Stay at the top */
+    left: 0;
+    background-color:  rgb(6, 36, 36); 
+    overflow-x: hidden; /* Disable horizontal scroll */
+    padding-top: 20px;
+  }
 
      /* On mouse-over */
    .dropdown-btn:hover {
