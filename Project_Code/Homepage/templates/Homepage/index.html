@@ -1,8 +1,6 @@
 <html>
   
 <head>
-
-    <h1> Welcome To Bookworm </h1>
     <meta charset="UTF-8">
     <!--  Loads the path to static files-->
       {% load staticfiles %}
@@ -27,14 +25,33 @@
 </head>
 
 
-<body translate="no">
+<body>
+
+        <nav class="navbar navbar-inverse ">
+                <div class="container-fluid">
+                     
+                    <div class="navbar-header">
+                            <a class="logo" >Bookworm</a>
+                     </div>
+
+                     <div class=" nav-btns topnav-right" >
+                            <button href="#" style="color: white; background: transparent; " >Signup</button>
+                            <button href="#" style="color: white; background: transparent; ">Login</button>
+                            <button href="#" style="color: white; background: transparent; ">Browse Books</button>
+                            <button href="#" style="color: white; background: transparent; ">Profile</button>
+                            <button href="#" style="color: white; background: transparent; ">Upgrade to pro</button>
+                          </div>
+                        
+                </div>
+        </nav>
+        
 
 
 <div class="main-container">
 <div class="coverflow-container">
 <ol class="coverflow-list">
 
-<h1> Here are some books that you might be interested in: </h1>
+<h1 style="color: white;" > Here are some books that you might be interested in: </h1>
 
 <input type="radio" name="cover-item" id="cover-1">
 <li class="coverflow-item">
@@ -119,24 +136,25 @@
 
 </div>
 </div>
-</body>
-</html>
-<body translate="no">
+
+
+<!------------------------------------------------------------------------->
+
+
 
 
 <div class="main-container">
 <div class="coverflow-container">
 <ol class="coverflow-list">
 
-<h1> Award Winning Books of 2018: </h1>
+<h1 style="color: white;" > Award Winning Books of 2018: </h1>
 
 <input type="radio" name="cover-item" id="cover-8">
 <li class="coverflow-item">
 <label for="cover-8">
 <figure class="album-cover">
 <img src="https://images-na.ssl-images-amazon.com/images/I/412Vb-C3--L._SX336_BO1,204,203,200_.jpg" />
-<figcaption class="album-name">A Lucky Man </figcaption>
-<figcaption class="author--name">Jamel Brinkley</figcaption>
+
 
 </figure>
 </label>
@@ -147,8 +165,7 @@
 <label for="cover-9">
 <figure class="album-cover">
 <img src="https://images-na.ssl-images-amazon.com/images/I/619FCk3MHwL._SX339_BO1,204,203,200_.jpg">
-<figcaption class="album-name">Gun Love</figcaption>
-<figcaption class="author--name">Jennifer Clement</figcaption>
+
 
 </figure>
 </label>
@@ -159,8 +176,7 @@
 <label for="cover-10">
 <figure class="album-cover">
 <img src="https://images-na.ssl-images-amazon.com/images/I/51bXQzJhvcL._SX318_BO1,204,203,200_.jpg">
-<figcaption class="album-name">Florida</figcaption>
-<figcaption class="author-name">Lauren Grof</figcaption>
+
 
 </figure>
 </label>
@@ -171,8 +187,6 @@
 <label for="cover-11">
 <figure class="album-cover">
 <img src="https://images-na.ssl-images-amazon.com/images/I/41lyVA8rRkL._SX346_BO1,204,203,200_.jpg">
-<figcaption class="album-name">The Boatbulder</figcaption>
-<figcaption class="author-name">Danile Gumbiner</figcaption>
 
 </figure>
 </label>
@@ -183,8 +197,6 @@
 <label for="cover-12">
 <figure class="album-cover">
 <img src="https://images-na.ssl-images-amazon.com/images/I/51R5OTD%2B-KL._SX331_BO1,204,203,200_.jpg">
-<figcaption class="album-name">Where the Dead Sit Talking</figcaption>
-<figcaption class="author-name">Brandon Hobson</figcaption>
 
 </figure>
 </label>
@@ -194,8 +206,7 @@
 <label for="cover-13">
 <figure class="album-cover">
 <img src="https://images-na.ssl-images-amazon.com/images/I/51RuAbKH%2BtL._SX326_BO1,204,203,200_.jpg">
-<figcaption class="album-name">There There</figcaption>
-<figcaption class="author-name">Tommy Orange </figcaption>
+
 
 
 </figure>
@@ -206,8 +217,6 @@
 <label for="cover-14">
 <figure class="album-cover">
 <img src="https://images-na.ssl-images-amazon.com/images/I/51e7ARPjDNL._SX328_BO1,204,203,200_.jpg">
-<figcaption class="album-name">The Great Believers</figcaption>
-<figcaption class="author-name">Rebecca Makkai</figcaption>
 
 </figure>
 </label>
