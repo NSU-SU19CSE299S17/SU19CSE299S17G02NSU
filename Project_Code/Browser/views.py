@@ -4,4 +4,4 @@ from django.http import HttpResponse
 # Create your views here.
 
 def browser(request):
- return render(request, 'Browser/browser.html')
+  return render(request, 'Browser/browser.html')
