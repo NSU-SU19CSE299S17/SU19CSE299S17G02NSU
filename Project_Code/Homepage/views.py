@@ -6,7 +6,7 @@ from django.http import HttpResponse
 
 def home(request):
   return render(request, 'Homepage/index.html')
-  # return HttpResponse (template.render(context,request))
+  return HttpResponse (template.render(context,request))
 
 def books(request):
   return render(request, 'Homepage/books.html')
