@@ -2,8 +2,8 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8c7c5759-9b7c-45a9-b410-9e7928de757a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Project_Code/Browser/admin.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project_Code/Browser/admin.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project_Code/Project_Code/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project_Code/Project_Code/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.idea/workspace.xml" beforeDir="false" afterPath="$PROJECT_DIR$/.idea/workspace.xml" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/Project_Code/Browser/models.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project_Code/Browser/models.py" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,14 +13,23 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Project_Code/Project_Code/urls.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="238">
-              <caret line="23" column="37" lean-forward="true" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
+            <state relative-caret-position="561">
+              <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
               <folding>
                 <element signature="e#637#669#0" expanded="true" />
               </folding>
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Project_Code/Browser/models.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="238">
+              <caret line="14" column="18" lean-forward="true" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
             </state>
           </provider>
         </entry>
@@ -35,15 +44,15 @@
       <list>
         <option value="$PROJECT_DIR$/Project_Code/Users/admin.py" />
         <option value="$PROJECT_DIR$/Project_Code/Users/views.py" />
-        <option value="$PROJECT_DIR$/Project_Code/Browser/models.py" />
         <option value="$PROJECT_DIR$/Project_Code/Browser/admin.py" />
         <option value="$PROJECT_DIR$/Project_Code/Project_Code/urls.py" />
+        <option value="$PROJECT_DIR$/Project_Code/Browser/models.py" />
       </list>
     </option>
   </component>
-  <component name="ProjectFrameBounds" extendedState="6">
-    <option name="x" value="34" />
-    <option name="y" value="61" />
+  <component name="ProjectFrameBounds" extendedState="7">
+    <option name="x" value="33" />
+    <option name="y" value="60" />
     <option name="width" value="1752" />
     <option name="height" value="573" />
   </component>
@@ -68,7 +77,7 @@
               <item name="SU19CSE299S17G02NSU" type="b2602c69:ProjectViewProjectNode" />
               <item name="SU19CSE299S17G02NSU" type="462c0819:PsiDirectoryNode" />
               <item name="Project_Code" type="462c0819:PsiDirectoryNode" />
-              <item name="Project_Code" type="462c0819:PsiDirectoryNode" />
+              <item name="Browser" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -131,7 +140,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32978722" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.23758866" />
+      <window_info anchor="bottom" id="Terminal" order="8" visible="true" weight="0.31914893" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -211,13 +220,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Project_Code/Browser/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="187">
-          <caret line="11" lean-forward="true" selection-start-line="11" selection-end-line="11" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Project_Code/Browser/admin.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="192">
@@ -230,11 +232,18 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Project_Code/Project_Code/urls.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="238">
-          <caret line="23" column="37" lean-forward="true" selection-start-line="23" selection-start-column="37" selection-end-line="23" selection-end-column="37" />
+        <state relative-caret-position="561">
+          <caret line="33" lean-forward="true" selection-start-line="33" selection-end-line="33" />
           <folding>
             <element signature="e#637#669#0" expanded="true" />
           </folding>
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Project_Code/Browser/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="238">
+          <caret line="14" column="18" lean-forward="true" selection-start-line="14" selection-start-column="18" selection-end-line="14" selection-end-column="18" />
         </state>
       </provider>
     </entry>
