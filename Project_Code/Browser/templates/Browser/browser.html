@@ -53,12 +53,12 @@
             <div class=" main">
 
            <!--  making the searh form-->
-                <form method="post" action="/Browser/">
+                <form method="post" action="Browser/browser.html">
                     {% csrf_token %}
 
-                    <div class="form-group">
-                        <div class="col-lg-5">
-                             <input type = "text" name="srh" class="form-control" placeholder="enter">
+                    <div class="form-group wrap ">
+                        <div class="search">
+                             <input type = "text" name="srh" class="form-control searchTerm " placeholder="enter">
                         </div>
 
                         <label class="col">
