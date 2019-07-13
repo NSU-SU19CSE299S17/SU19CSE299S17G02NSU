@@ -9,6 +9,9 @@ class Books(models.Model):
     Genre2 = models.CharField(max_length=150)
     Plot   = models.TextField()
 
+#'Books' is populated with data from 'DATA set.csv' using csv.py package
+
 
 def __str__(self):
     return self.title
+
