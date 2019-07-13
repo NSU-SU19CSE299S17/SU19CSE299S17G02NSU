@@ -28,7 +28,10 @@
 </head>
 
 <body>
-    <nav class="navbar navbar-fixed-top navbar-default navbar-inverse ">
+
+ <div class="header" >
+
+ <div class="navbar navbar-fixed-top navbar-default navbar-inverse ">
         <div class="container-fluid">
              
             <div class="navbar-header">
@@ -42,28 +45,41 @@
                   </div>
                 
         </div>
-</nav>
+ </div>
 
-     <div class="container-fluid text-center">    
-        <div class="row content">
-            <div class=" sidenav">
+ </div>
+
+  <!--   <div class="container-fluid text-center">
+
+
+            <div class="grid-container">
                  <h3 style="color: white; ">AD content</h3>
-             </div>
-    
-            <div class=" main">
+                <button href="#" style="color: white; background: transparent; " >Test 2</button>
 
-           <!--  making the searh form-->
-                <form method="post" action="Browser/browser.html">
+             </div>
+
+    
+            <div class=" mid ">
+                <button href="#" style="color: white; background: transparent; " >Test</button>
+
+            </div>
+
+    
+     </div>
+
+    -->
+<div>
+
+    <!--  making the searh form-->
+                <form method="post" action="/Browser/">
                     {% csrf_token %}
 
-                    <div class="form-group wrap ">
+                    <div class=" form-group wrap ">
                         <div class="search">
                              <input type = "text" name="srh" class="form-control searchTerm " placeholder="enter">
                         </div>
 
-                        <label class="col">
-                             <button type="submit" class ="btn btn-danger"> Search </button>
-                        </label>
+                             <button type="submit" > Search </button>
                     </div>
 
                  <!--   <div class="wrap">
@@ -71,7 +87,7 @@
                            <input type="text" class="searchTerm" placeholder="Search Here">
                         </div>
                      </div>     -->
-                 </form> <br>
+                 </form>
                 <div>
                      {% if messages %}
                        <ul class="messages">
@@ -100,10 +116,9 @@
 
                 </div>
 
-            </div>
-    
-      </div>
-    </div>
+
+</div>
+
 
 </body>
 </html>
