@@ -1,10 +1,7 @@
 <?xml version="1.0" encoding="UTF-8"?>
 <project version="4">
   <component name="ChangeListManager">
-    <list default="true" id="8c7c5759-9b7c-45a9-b410-9e7928de757a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Project_Code/Browser/templates/Browser/browser.html" beforeDir="false" afterPath="$PROJECT_DIR$/Project_Code/Browser/templates/Browser/browser.html" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project_Code/Browser/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project_Code/Browser/views.py" afterDir="false" />
-    </list>
+    <list default="true" id="8c7c5759-9b7c-45a9-b410-9e7928de757a" name="Default Changelist" comment="" />
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
     <option name="HIGHLIGHT_CONFLICTS" value="true" />
@@ -13,15 +10,6 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Project_Code/Browser/models.py">
-          <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="204">
-              <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-            </state>
-          </provider>
-        </entry>
-      </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Project_Code/Browser/views.py">
           <provider selected="true" editor-type-id="text-editor">
@@ -34,22 +22,24 @@
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="true">
-        <entry file="file://$PROJECT_DIR$/Project_Code/Browser/templates/Browser/browser.html">
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Project_Code/Users/templates/Users/Register.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="141">
-              <caret line="51" column="4" lean-forward="true" selection-start-line="51" selection-start-column="4" selection-end-line="51" selection-end-column="4" />
-              <folding>
-                <element signature="n#style#0;n#li#0;n#ul#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
-              </folding>
+            <state relative-caret-position="119">
+              <caret line="7" column="12" lean-forward="true" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
             </state>
           </provider>
         </entry>
       </file>
-      <file pinned="false" current-in-tab="false">
-        <entry file="file://$PROJECT_DIR$/Project_Code/Browser/static/Browser/Browser.css">
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Project_Code/Browser/templates/Browser/browser.html">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="-1377" />
+            <state relative-caret-position="255">
+              <caret line="66" column="26" lean-forward="true" selection-start-line="66" selection-start-column="26" selection-end-line="66" selection-end-column="26" />
+              <folding>
+                <element signature="n#style#0;n#li#0;n#ul#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
+              </folding>
+            </state>
           </provider>
         </entry>
       </file>
@@ -94,37 +84,22 @@
               <item name="SU19CSE299S17G02NSU" type="b2602c69:ProjectViewProjectNode" />
               <item name="SU19CSE299S17G02NSU" type="462c0819:PsiDirectoryNode" />
               <item name="Project_Code" type="462c0819:PsiDirectoryNode" />
-              <item name="Browser" type="462c0819:PsiDirectoryNode" />
+              <item name="Users" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SU19CSE299S17G02NSU" type="b2602c69:ProjectViewProjectNode" />
               <item name="SU19CSE299S17G02NSU" type="462c0819:PsiDirectoryNode" />
               <item name="Project_Code" type="462c0819:PsiDirectoryNode" />
-              <item name="Browser" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SU19CSE299S17G02NSU" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SU19CSE299S17G02NSU" type="462c0819:PsiDirectoryNode" />
-              <item name="Project_Code" type="462c0819:PsiDirectoryNode" />
-              <item name="Browser" type="462c0819:PsiDirectoryNode" />
-              <item name="static" type="462c0819:PsiDirectoryNode" />
-              <item name="Browser" type="462c0819:PsiDirectoryNode" />
-            </path>
-            <path>
-              <item name="SU19CSE299S17G02NSU" type="b2602c69:ProjectViewProjectNode" />
-              <item name="SU19CSE299S17G02NSU" type="462c0819:PsiDirectoryNode" />
-              <item name="Project_Code" type="462c0819:PsiDirectoryNode" />
-              <item name="Browser" type="462c0819:PsiDirectoryNode" />
+              <item name="Users" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SU19CSE299S17G02NSU" type="b2602c69:ProjectViewProjectNode" />
               <item name="SU19CSE299S17G02NSU" type="462c0819:PsiDirectoryNode" />
               <item name="Project_Code" type="462c0819:PsiDirectoryNode" />
-              <item name="Browser" type="462c0819:PsiDirectoryNode" />
+              <item name="Users" type="462c0819:PsiDirectoryNode" />
               <item name="templates" type="462c0819:PsiDirectoryNode" />
-              <item name="Browser" type="462c0819:PsiDirectoryNode" />
+              <item name="Users" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
           <select />
@@ -211,13 +186,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Project_Code/Browser/models.py">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="204">
-          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Project_Code/Homepage/templates/Homepage/index.html">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -242,13 +210,6 @@
         </state>
       </provider>
     </entry>
-    <entry file="file://$PROJECT_DIR$/Project_Code/Users/templates/Users/Register.html">
-      <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="102">
-          <caret line="6" column="9" lean-forward="true" selection-start-line="6" selection-start-column="9" selection-end-line="6" selection-end-column="9" />
-        </state>
-      </provider>
-    </entry>
     <entry file="file://$PROJECT_DIR$/Project_Code/Users/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="51">
@@ -261,6 +222,13 @@
         <state relative-caret-position="-1377" />
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Project_Code/Browser/models.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="204">
+          <caret line="12" column="18" selection-start-line="12" selection-start-column="18" selection-end-line="12" selection-end-column="18" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Project_Code/Browser/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="268">
@@ -271,10 +239,17 @@
         </state>
       </provider>
     </entry>
+    <entry file="file://$PROJECT_DIR$/Project_Code/Users/templates/Users/Register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="119">
+          <caret line="7" column="12" lean-forward="true" selection-start-line="7" selection-start-column="12" selection-end-line="7" selection-end-column="12" />
+        </state>
+      </provider>
+    </entry>
     <entry file="file://$PROJECT_DIR$/Project_Code/Browser/templates/Browser/browser.html">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="141">
-          <caret line="51" column="4" lean-forward="true" selection-start-line="51" selection-start-column="4" selection-end-line="51" selection-end-column="4" />
+        <state relative-caret-position="255">
+          <caret line="66" column="26" lean-forward="true" selection-start-line="66" selection-start-column="26" selection-end-line="66" selection-end-column="26" />
           <folding>
             <element signature="n#style#0;n#li#0;n#ul#0;n#div#0;n#div#1;n#div#0;n#div#0;n#body#0;n#html#0;n#!!top" expanded="true" />
           </folding>
