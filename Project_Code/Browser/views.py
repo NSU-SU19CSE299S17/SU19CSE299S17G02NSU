@@ -15,7 +15,7 @@ def browser(request):
         match = Books.objects.filter(Q(Title__icontains=srch) | Q(Author__icontains=srch)  )
 
         if match:
-             return render(request, 'Browser/browser.html', {'sr':match})
+             return render(request, '/Browser/', {'sr':match})
         else:
              messages.error(request,'no results found')
 
