@@ -12,6 +12,12 @@
 <<<<<<< HEAD
     <leaf>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
+        <entry file="file://$PROJECT_DIR$/Browser/static/Browser/Browser.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="255">
+              <caret line="105" column="28" selection-start-line="105" selection-start-column="21" selection-end-line="105" selection-end-column="28" />
+=======
 <<<<<<< Updated upstream
         <entry file="file://$PROJECT_DIR$/Users/templates/Users/login.html">
 =======
@@ -23,20 +29,34 @@
                 <element signature="e#0#635#1" />
                 <element signature="e#636#668#0" expanded="true" />
               </folding>
+>>>>>>> master
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
+        <entry file="file://$PROJECT_DIR$/Browser/templates/Browser/browser.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="459">
+              <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+=======
         <entry file="file://$PROJECT_DIR$/Users/templates/Users/Register.html">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="442">
               <caret line="26" column="7" lean-forward="true" selection-start-line="26" selection-start-column="7" selection-end-line="26" selection-end-column="7" />
+>>>>>>> master
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
+        <entry file="file://$PROJECT_DIR$/Users/static/user/register.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="510">
+              <caret line="30" column="27" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
+=======
         <entry file="file://$PROJECT_DIR$/Browser/static/Browser/Browser.css">
 >>>>>>> Stashed changes
           <provider selected="true" editor-type-id="text-editor">
@@ -67,21 +87,36 @@
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="102">
               <caret line="6" selection-start-line="6" selection-end-line="6" />
+>>>>>>> master
             </state>
           </provider>
         </entry>
       </file>
+<<<<<<< HEAD
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/Users/templates/Users/Register.html">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-1075">
+              <caret line="22" selection-start-line="22" selection-end-line="22" />
+=======
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Users/apps.py">
           <provider selected="true" editor-type-id="text-editor">
             <state relative-caret-position="68">
               <caret line="4" column="18" lean-forward="true" selection-start-line="4" selection-start-column="18" selection-end-line="4" selection-end-column="18" />
 >>>>>>> Stashed changes
+>>>>>>> master
             </state>
           </provider>
         </entry>
       </file>
       <file pinned="false" current-in-tab="false">
+<<<<<<< HEAD
+        <entry file="file://$PROJECT_DIR$/Project_Code/settings.py">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="2125">
+              <caret line="125" column="23" lean-forward="true" selection-start-line="125" selection-start-column="23" selection-end-line="125" selection-end-column="23" />
+=======
         <entry file="file://$PROJECT_DIR$/Users/views.py">
           <provider selected="true" editor-type-id="text-editor">
 <<<<<<< Updated upstream
@@ -107,6 +142,7 @@
                 <element signature="e#0#45#0" expanded="true" />
               </folding>
 >>>>>>> Stashed changes
+>>>>>>> master
             </state>
           </provider>
         </entry>
@@ -136,6 +172,18 @@
         <option value="$PROJECT_DIR$/Users/admin.py" />
         <option value="$PROJECT_DIR$/Project_Code/settings.py" />
         <option value="$PROJECT_DIR$/Project_Code/urls.py" />
+<<<<<<< HEAD
+        <option value="$PROJECT_DIR$/Users/templates/Users/login.html" />
+        <option value="$PROJECT_DIR$/Users/admin.py" />
+        <option value="$PROJECT_DIR$/Users/views.py" />
+        <option value="$PROJECT_DIR$/Project_Code/settings.py" />
+        <option value="$PROJECT_DIR$/Users/templates/Users/Register.html" />
+        <option value="$PROJECT_DIR$/Users/static/user/register.css" />
+      </list>
+    </option>
+  </component>
+  <component name="ProjectFrameBounds" extendedState="6">
+=======
         <option value="$PROJECT_DIR$/Users/templates/Users/Register.html" />
 =======
         <option value="$PROJECT_DIR$/Project_Code/settings.py" />
@@ -156,6 +204,7 @@
 <<<<<<< HEAD
   <component name="ProjectFrameBounds">
 >>>>>>> Stashed changes
+>>>>>>> master
     <option name="x" value="952" />
     <option name="width" value="977" />
     <option name="height" value="1038" />
@@ -183,29 +232,44 @@
             <path>
               <item name="Project_Code" type="b2602c69:ProjectViewProjectNode" />
               <item name="Project_Code" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
+              <item name="Project_Code" type="462c0819:PsiDirectoryNode" />
+=======
 <<<<<<< Updated upstream
               <item name="Homepage" type="462c0819:PsiDirectoryNode" />
 =======
 <<<<<<< HEAD
               <item name="Users" type="462c0819:PsiDirectoryNode" />
+>>>>>>> master
             </path>
 <<<<<<< Updated upstream
             <path>
               <item name="Project_Code" type="b2602c69:ProjectViewProjectNode" />
               <item name="Project_Code" type="462c0819:PsiDirectoryNode" />
               <item name="Users" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
+=======
               <item name="migrations" type="462c0819:PsiDirectoryNode" />
 >>>>>>> Stashed changes
+>>>>>>> master
             </path>
             <path>
               <item name="Project_Code" type="b2602c69:ProjectViewProjectNode" />
               <item name="Project_Code" type="462c0819:PsiDirectoryNode" />
               <item name="Users" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+=======
+>>>>>>> master
             </path>
             <path>
               <item name="Project_Code" type="b2602c69:ProjectViewProjectNode" />
               <item name="Project_Code" type="462c0819:PsiDirectoryNode" />
               <item name="Users" type="462c0819:PsiDirectoryNode" />
+<<<<<<< HEAD
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+              <item name="user" type="462c0819:PsiDirectoryNode" />
+=======
               <item name="templates" type="462c0819:PsiDirectoryNode" />
 <<<<<<< Updated upstream
 =======
@@ -214,6 +278,7 @@
               <item name="Project_Code" type="462c0819:PsiDirectoryNode" />
 >>>>>>> master
 >>>>>>> Stashed changes
+>>>>>>> master
             </path>
 =======
 >>>>>>> Stashed changes
@@ -346,6 +411,12 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/Browser/apps.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+=======
+>>>>>>> master
     <entry file="file://$PROJECT_DIR$/Browser/views.py">
       <provider selected="true" editor-type-id="text-editor">
         <state>
@@ -520,8 +591,15 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/Users/migrations/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Users/templates/Users/login.html">
+=======
 <<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/Users/views.py">
+>>>>>>> master
       <provider selected="true" editor-type-id="text-editor">
 <<<<<<< Updated upstream
         <state relative-caret-position="68">
@@ -537,6 +615,21 @@
           </folding>
 =======
         <state relative-caret-position="85">
+<<<<<<< HEAD
+          <caret line="5" selection-start-line="5" selection-end-line="5" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Users/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Users/admin.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="51">
+          <caret line="3" selection-start-line="3" selection-end-line="3" />
+          <folding>
+            <element signature="e#0#32#0" expanded="true" />
+=======
           <caret line="19" selection-start-line="19" selection-end-line="19" />
 =======
     <entry file="file://$PROJECT_DIR$/Users/urls.py">
@@ -545,6 +638,7 @@
 >>>>>>> Stashed changes
           <folding>
             <element signature="e#0#28#0" expanded="true" />
+>>>>>>> master
           </folding>
 =======
         <state relative-caret-position="17">
@@ -553,6 +647,15 @@
         </state>
       </provider>
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/Users/views.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="442">
+          <caret line="26" column="48" lean-forward="true" selection-start-line="26" selection-start-column="48" selection-end-line="26" selection-end-column="48" />
+          <folding>
+            <element signature="e#0#45#0" expanded="true" />
+          </folding>
+=======
 <<<<<<< Updated upstream
     <entry file="file://$PROJECT_DIR$/manage.py">
       <provider selected="true" editor-type-id="text-editor">
@@ -560,12 +663,39 @@
         <state relative-caret-position="540">
           <caret line="128" column="18" selection-start-line="128" selection-start-column="18" selection-end-line="128" selection-end-column="18" />
 >>>>>>> Stashed changes
+>>>>>>> master
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Project_Code/__init__.py">
+      <provider selected="true" editor-type-id="text-editor" />
+    </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/Project_Code/urls.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="85">
+          <caret line="19" selection-start-line="19" selection-end-line="19" />
+          <folding>
+            <element signature="e#0#635#1" />
+          </folding>
         </state>
       </provider>
     </entry>
     <entry file="file://$PROJECT_DIR$/Project_Code/wsgi.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+    <entry file="file://$PROJECT_DIR$/Project_Code/settings.py">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="2125">
+          <caret line="125" column="23" lean-forward="true" selection-start-line="125" selection-start-column="23" selection-end-line="125" selection-end-column="23" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Browser/templates/Browser/browser.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="459">
+          <caret line="45" lean-forward="true" selection-start-line="45" selection-end-line="45" />
+=======
     <entry file="file://$PROJECT_DIR$/Users/templates/Users/Register.html">
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="374">
@@ -587,12 +717,33 @@
           <folding>
             <element signature="e#0#24#0" expanded="true" />
           </folding>
+>>>>>>> master
         </state>
       </provider>
 =======
     <entry file="file://$PROJECT_DIR$/Users/tests.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
+<<<<<<< HEAD
+    <entry file="file://$PROJECT_DIR$/Browser/static/Browser/Browser.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="255">
+          <caret line="105" column="28" selection-start-line="105" selection-start-column="21" selection-end-line="105" selection-end-column="28" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Users/static/user/register.css">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="510">
+          <caret line="30" column="27" selection-start-line="30" selection-start-column="27" selection-end-line="30" selection-end-column="27" />
+        </state>
+      </provider>
+    </entry>
+    <entry file="file://$PROJECT_DIR$/Users/templates/Users/Register.html">
+      <provider selected="true" editor-type-id="text-editor">
+        <state relative-caret-position="-1075">
+          <caret line="22" selection-start-line="22" selection-end-line="22" />
+=======
     <entry file="file://$PROJECT_DIR$/Users/models.py">
       <provider selected="true" editor-type-id="text-editor" />
     </entry>
@@ -690,6 +841,7 @@
       <provider selected="true" editor-type-id="text-editor">
         <state relative-caret-position="102">
           <caret line="6" selection-start-line="6" selection-end-line="6" />
+>>>>>>> master
         </state>
       </provider>
     </entry>
