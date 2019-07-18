@@ -1,3 +1,4 @@
+![alt text](https://assetsds.cdnedge.bluemix.net/sites/default/files/beta2/uploads/2013/03/NSU1.jpg)
 # Book Recommending System
 
  **Bookworm** is a content based book recommending system. It is a web application where the user can get new book recommendations based on the the books they have read. 
