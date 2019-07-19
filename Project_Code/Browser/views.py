@@ -18,7 +18,9 @@ def browser(request):
         if match:
              return render(request, 'Browser/browser.html', {'sr':match})
         else:
-            messages.error(request,'No Results Found!')
+            raise Exception('Not Found!!')
+            #displays django's error page instead of showing error message in browser page
+            #messages.error(request,'No Results Found!')
 
 
       else:
