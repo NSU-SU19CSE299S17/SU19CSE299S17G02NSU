@@ -5,6 +5,7 @@ from django.db.models import Q
 from django.contrib import messages
 from django.http import HttpResponseRedirect
 
+
 # Create your views here.
 
 def browser(request):
@@ -15,12 +16,16 @@ def browser(request):
         match = Books.objects.filter(Q(Title__icontains=srch) | Q(Author__icontains=srch)  )
 
         if match:
-             return render(request, '/Browser/', {'sr':match})
+             return render(request, 'Browser/browser.html', {'sr':match})
         else:
-             messages.error(request,'no results found')
+            raise Exception('Not Found!!')
+            #displays django's error page instead of showing error message in browser page
+            #messages.error(request,'No Results Found!')
+
 
       else:
-         return HttpResponseRedirect('/Browser/')
+          return render(request, 'Browser/browser.html')
+          #return HttpResponseRedirect('/Browser/browser.html')
 
   else:
     return render(request, 'Browser/browser.html')
