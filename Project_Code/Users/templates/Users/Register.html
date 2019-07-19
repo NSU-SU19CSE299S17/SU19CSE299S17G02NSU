@@ -6,7 +6,7 @@
         <form method="POST" >
             {% csrf_token %}
             <fieldset class="form-group">
-                <legend class="border-bottom mb-4"  style="font-size: 35px; font-weight: bold" </legend>
+                <legend class="border-bottom mb-4"  style="font-size: 35px; font-weight: bold">Join Today! </legend>
                 {{ form|crispy }}
             </fieldset>
             <div class="form-group">
@@ -14,7 +14,7 @@
             </div>
         </form>
 
-        <div class="border-top pt-3" >
+        <div class="border-top pt-3"  style=" font-size: 20px; border-bottom-width: 1px ">
             <small class="text-muted">
                 Already Have An Account? <a class="ml-2" href="{% url 'login' %}" style="color: white">Sign In</a>
             </small>
