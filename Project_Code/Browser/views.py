@@ -4,7 +4,7 @@ from .models import Books
 from django.db.models import Q
 from django.contrib import messages
 from django.http import HttpResponseRedirect
-from django.shortcuts import redirect
+
 
 # Create your views here.
 
@@ -18,7 +18,7 @@ def browser(request):
         if match:
              return render(request, 'Browser/browser.html', {'sr':match})
         else:
-             messages.error(request,'no results found')
+            messages.error(request,'No Results Found!')
 
 
       else:
