@@ -10,11 +10,11 @@
 
                      <div class=" nav-btns topnav-right" >
 
-                            <button href="#" >Edit Profile</button>
-                            <button href="#" >My Library</button>
-                            <button href="#" >Browser</button>
-
-                          </div>
+                         <button href="#" >Edit Profile</button>
+                         <button href="#" >My Library</button>
+                         <button href="#" >Browser</button>
+                         <button href="#" >Recommendations</button>
+                     </div>
 
                 </div>
         </nav>
@@ -25,7 +25,6 @@
             <div class="media-body">
                 <h2 class="account-heading">{{ user.username }}</h2>
                 <p class="text-secondary">{{ user.email }}</p>
-                <a href= "{% url 'logout' %}" style="color: white; background: transparent; ">Login</a>
 
             </div>
         </div>
