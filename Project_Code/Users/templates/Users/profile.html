@@ -1,13 +1,33 @@
 {% load crispy_forms_tags %}
 {% block content %}
+<body>
+    <nav class="navbar navbar-inverse ">
+                <div class="container-fluid">
+
+                    <div class="navbar-header">
+                            <a class="logo" >Bookworm</a>
+                     </div>
+
+                     <div class=" nav-btns topnav-right" >
+
+                         <button href="#" >Edit Profile</button>
+                         <button href="#" >My Library</button>
+                         <button href="#" >Browser</button>
+                         <button href="#" >Recommendations</button>
+                     </div>
+
+                </div>
+        </nav>
+
     <div class="content-section">
         <div class="media">
             <img class="rounded-circle account-img" src="{{ user.profile.image.url }}">
             <div class="media-body">
                 <h2 class="account-heading">{{ user.username }}</h2>
                 <p class="text-secondary">{{ user.email }}</p>
+
             </div>
         </div>
     </div>
-
+</body>
 {% endblock content %}
