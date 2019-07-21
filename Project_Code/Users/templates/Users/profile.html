@@ -1,9 +1,11 @@
-{% load crispy_forms_tags %}
-{% block content %}
+<html>
 <head>
     <!--  Loads the path to static files-->
 {% load staticfiles %}
-<link rel="stylesheet" type="text/css"  href="{% static 'Users/user.css' %}"
+    {% load crispy_forms_tags %}
+    {% block content %}
+
+<link rel="stylesheet" type="text/css"  href="{% static 'users/profile.css' %}">
 
 
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
@@ -27,24 +29,29 @@
 
 
 </head>
+
 <body>
-    <nav class="navbar navbar-inverse ">
-                <div class="container-fluid">
 
-                    <div class="navbar-header">
-                            <a class="logo" >Bookworm</a>
-                     </div>
+<div class="header" >
 
-                     <div class=" nav-btns topnav-right" >
+ <div class="navbar navbar-fixed-top navbar-default navbar-inverse ">
+        <div class="container-fluid">
 
-                         <button href="#" >Edit Profile</button>
-                         <button href="#" >My Library</button>
-                         <button href="#" >Browser</button>
-                         <button href="#" >Recommendations</button>
-                     </div>
+            <div class="navbar-header">
+                <a class="logo" >Bookworm</a>
+            </div>
 
-                </div>
-        </nav>
+            <div class=" nav-btns topnav-right" >
+                <button href="#" >Edit Profile</button>
+                <button href="#" >My Library</button>
+                <button href="#" >Browser</button>
+                <button href="#" >Recommendations</button>
+            </div>
+        </div>
+ </div>
+
+</div>
+
 
     <div class="content-section">
         <div class="media">
@@ -58,4 +65,5 @@
         </div>
     </div>
 </body>
+</html>
 {% endblock content %}
