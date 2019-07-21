@@ -2,8 +2,7 @@
 <project version="4">
   <component name="ChangeListManager">
     <list default="true" id="8c7c5759-9b7c-45a9-b410-9e7928de757a" name="Default Changelist" comment="">
-      <change beforePath="$PROJECT_DIR$/Project_Code/Browser/views.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project_Code/Browser/views.py" afterDir="false" />
-      <change beforePath="$PROJECT_DIR$/Project_Code/Project_Code/urls.py" beforeDir="false" afterPath="$PROJECT_DIR$/Project_Code/Project_Code/urls.py" afterDir="false" />
+      <change beforePath="$PROJECT_DIR$/.gitignore" beforeDir="false" afterPath="$PROJECT_DIR$/.gitignore" afterDir="false" />
     </list>
     <option name="EXCLUDED_CONVERTED_TO_IGNORED" value="true" />
     <option name="SHOW_DIALOG" value="false" />
@@ -13,10 +12,10 @@
   </component>
   <component name="FileEditorManager">
     <leaf SIDE_TABS_SIZE_LIMIT_KEY="300">
-      <file pinned="false" current-in-tab="true">
+      <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Project_Code/Browser/views.py">
           <provider selected="true" editor-type-id="text-editor">
-            <state relative-caret-position="302">
+            <state relative-caret-position="323">
               <caret line="24" selection-start-line="24" selection-end-line="24" />
               <folding>
                 <element signature="e#0#35#0" expanded="true" />
@@ -27,7 +26,29 @@
       </file>
       <file pinned="false" current-in-tab="false">
         <entry file="file://$PROJECT_DIR$/Project_Code/Browser/templates/Browser/browser.html">
-          <provider selected="true" editor-type-id="text-editor" />
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="-11">
+              <caret line="52" lean-forward="true" selection-start-line="52" selection-end-line="52" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="true">
+        <entry file="file://$PROJECT_DIR$/.gitignore">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="331">
+              <caret line="139" lean-forward="true" selection-start-line="139" selection-end-line="139" />
+            </state>
+          </provider>
+        </entry>
+      </file>
+      <file pinned="false" current-in-tab="false">
+        <entry file="file://$PROJECT_DIR$/Project_Code/Browser/static/Browser/Browser.css">
+          <provider selected="true" editor-type-id="text-editor">
+            <state relative-caret-position="1292">
+              <caret line="76" selection-start-line="76" selection-end-line="76" />
+            </state>
+          </provider>
         </entry>
       </file>
     </leaf>
@@ -44,6 +65,7 @@
         <option value="$PROJECT_DIR$/Project_Code/Project_Code/urls.py" />
         <option value="$PROJECT_DIR$/Project_Code/Browser/models.py" />
         <option value="$PROJECT_DIR$/Project_Code/Browser/views.py" />
+        <option value="$PROJECT_DIR$/.gitignore" />
       </list>
     </option>
   </component>
@@ -68,12 +90,38 @@
             <path>
               <item name="SU19CSE299S17G02NSU" type="b2602c69:ProjectViewProjectNode" />
               <item name="SU19CSE299S17G02NSU" type="462c0819:PsiDirectoryNode" />
+              <item name="Documentation" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SU19CSE299S17G02NSU" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SU19CSE299S17G02NSU" type="462c0819:PsiDirectoryNode" />
+              <item name="Documentation" type="462c0819:PsiDirectoryNode" />
+              <item name="Dataset" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SU19CSE299S17G02NSU" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SU19CSE299S17G02NSU" type="462c0819:PsiDirectoryNode" />
               <item name="Project_Code" type="462c0819:PsiDirectoryNode" />
             </path>
             <path>
               <item name="SU19CSE299S17G02NSU" type="b2602c69:ProjectViewProjectNode" />
               <item name="SU19CSE299S17G02NSU" type="462c0819:PsiDirectoryNode" />
               <item name="Project_Code" type="462c0819:PsiDirectoryNode" />
+              <item name="Browser" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SU19CSE299S17G02NSU" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SU19CSE299S17G02NSU" type="462c0819:PsiDirectoryNode" />
+              <item name="Project_Code" type="462c0819:PsiDirectoryNode" />
+              <item name="Browser" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
+            </path>
+            <path>
+              <item name="SU19CSE299S17G02NSU" type="b2602c69:ProjectViewProjectNode" />
+              <item name="SU19CSE299S17G02NSU" type="462c0819:PsiDirectoryNode" />
+              <item name="Project_Code" type="462c0819:PsiDirectoryNode" />
+              <item name="Browser" type="462c0819:PsiDirectoryNode" />
+              <item name="static" type="462c0819:PsiDirectoryNode" />
               <item name="Browser" type="462c0819:PsiDirectoryNode" />
             </path>
           </expand>
@@ -137,7 +185,7 @@
       <window_info anchor="bottom" id="Inspection" order="5" weight="0.4" />
       <window_info anchor="bottom" id="TODO" order="6" weight="0.32978722" />
       <window_info anchor="bottom" id="Version Control" order="7" />
-      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.2535461" />
+      <window_info active="true" anchor="bottom" id="Terminal" order="8" visible="true" weight="0.18262412" />
       <window_info anchor="bottom" id="Event Log" order="9" side_tool="true" />
       <window_info anchor="bottom" id="Python Console" order="10" />
       <window_info anchor="right" id="Commander" internal_type="SLIDING" order="0" type="SLIDING" weight="0.4" />
@@ -200,7 +248,7 @@
     </entry>
     <entry file="file://$PROJECT_DIR$/Project_Code/Browser/views.py">
       <provider selected="true" editor-type-id="text-editor">
-        <state relative-caret-position="302">
+        <state relative-caret-position="323">
           <caret line="24" selection-start-line="24" selection-end-line="24" />
           <folding>
             <element signature="e#0#35#0" expanded="true" />
