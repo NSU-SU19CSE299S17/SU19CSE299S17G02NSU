@@ -45,14 +45,22 @@
                      </div>
 
                      <div class=" nav-btns topnav-right" >
+                         <!--Added Register button -->
                             <a href="{% url 'Register' %}" style="color: white; background: transparent; " >
                                 <button>Register</button>
                             </a>
+                         <!--Added Login button -->
                             <a href= "{% url 'login' %}" style="color: white; background: transparent; ">
                                 <button>Login</button>
                             </a>
-                            <button href="#" style="color: white; background: transparent; ">Browse Books</button>
-                            <button href="#" style="color: white; background: transparent; ">Profile</button>
+                         <!--Added profile button -->
+                         <a
+                         <button href="#" style="color: white; background: transparent; ">Browse Books</button>
+                         <!--Added profile button -->
+                            <a href="{% url 'profile' %}" style="color: white; background: transparent; ">
+                                <button>Profile</button>
+                            </a>
+
                             <button href="#" style="color: white; background: transparent; ">Upgrade to pro</button>
                           </div>
                         
