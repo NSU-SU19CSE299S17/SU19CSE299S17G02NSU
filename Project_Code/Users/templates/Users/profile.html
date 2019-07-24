@@ -46,6 +46,9 @@
                 <button href="#" >My Library</button>
                 <button href="#" >Browser</button>
                 <button href="#" >Recommendations</button>
+                <a href= "{% url 'logout' %}" >
+                    <button> Logout </button>
+                </a>
             </div>
         </div>
  </div>
@@ -59,9 +62,16 @@
             <div class="media-body">
                 <h2 class="account-heading">{{ user.username }}</h2>
                 <p class="text-secondary">{{ user.email }}</p>
-                <a href= "{% url 'logout' %}" >
-                    <button> Logout </button>
-                </a>
+                 <form method="POST" enctype="multipart/form-data">
+                     {% csrf_token %}
+                     <fieldset class="form-group">
+                         {{ u_form|crispy }}
+                         {{ p_form|crispy }}
+                     </fieldset>
+                     <div class="form-group">
+                         <button class="btn btn-outline-info" type="submit">Update</button>
+                     </div>
+                 </form>
 
             </div>
         </div>
