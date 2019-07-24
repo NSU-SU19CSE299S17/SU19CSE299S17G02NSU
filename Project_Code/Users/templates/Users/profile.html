@@ -42,12 +42,11 @@
             </div>
 
             <div class=" nav-btns topnav-right" >
-                <button href="#" >Edit Profile</button>
                 <button href="#" >My Library</button>
                 <button href="#" >Browser</button>
                 <button href="#" >Recommendations</button>
                 <a href= "{% url 'logout' %}" >
-                    <button> Logout </button>
+                    <button style="color: white; background: transparent; ">Logout</button>
                 </a>
             </div>
         </div>
@@ -69,6 +68,7 @@
                          {{ p_form|crispy }}
                      </fieldset>
                      <div class="form-group">
+                         <br>
                          <button class="btn btn-outline-info" type="submit">Update</button>
                      </div>
                  </form>
