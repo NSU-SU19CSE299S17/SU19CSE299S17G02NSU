@@ -1,0 +1,14 @@
+.navbar {
+    margin-bottom: 0;
+    border-radius: 0;
+
+    padding: 30px;
+    padding-left: 0px;
+    padding-bottom: 30px;
+
+    background-color:   rgb(6, 36, 36);
+     border-bottom-color: white;
+    border-bottom-width: 1px;
+    border-bottom-style: solid;
+
+  }
