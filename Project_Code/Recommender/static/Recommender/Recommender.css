@@ -1,4 +1,4 @@
-* Remove the navbar's default margin-bottom and rounded borders */
+/* Remove the navbar's default margin-bottom and rounded borders */
 .navbar {
     margin-bottom: 0;
     border-radius: 0;
@@ -37,4 +37,25 @@
   }
   .logo:hover {
     color: rgb(250, 235, 221);
+  }
+
+
+
+
+     /* On mouse-over */
+   .dropdown-btn:hover {
+    color: #94c0f1;
+ }
+
+
+ .green{
+    background-color:#2c8a43;
+ }
+
+  .thumb{
+      margin-bottom: 30px;
+  }
+
+  .page-top{
+      margin-top:85px;
   }
