@@ -22,4 +22,7 @@ class Profile(models.Model):
             img.save(self.image.path)
 
 class Books(models.Model):
-    
+    genre = models.CharField(max_length=30)
+    author = models.CharField(max_length=30)
+    name = models.CharField(max_length=30)
+
