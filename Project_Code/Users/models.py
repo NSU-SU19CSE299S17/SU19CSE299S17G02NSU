@@ -20,3 +20,9 @@ class Profile(models.Model):
             output_size = (300, 300)
             img.thumbnail(output_size)
             img.save(self.image.path)
+
+class Books(models.Model):
+    genre = models.CharField(max_length=30)
+    author = models.CharField(max_length=30)
+    name = models.CharField(max_length=30)
+

@@ -25,4 +25,12 @@ class ProfileUpdateForm(forms.ModelForm):
         fields = ['image']
 
 
+class MyLibraryUpdateForm(forms.ModelForm):
+    class Meta:
+        model = User
+        fields = ['username', 'email']
+
+
+
+
 
