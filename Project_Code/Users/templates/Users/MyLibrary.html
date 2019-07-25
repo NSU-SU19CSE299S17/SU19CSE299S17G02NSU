@@ -1,6 +1,31 @@
 <!DOCTYPE html>
 <html>
 <head>
+  {% load staticfiles %}
+
+<link rel="stylesheet" type="text/css"  href="{% static 'users/MyLibrary.css' %}">
+
+
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+    <!--adding js scripts-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+
+<script>
+        window.console = window.console || function(t) {};
+   </script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+   <script>
+       if (document.location.search.match(/type=embed/gi)) {
+             window.parent.postMessage("resize", "*");    }
+   </script>
+
+
+
 <style>
 table {
   font-family: arial, sans-serif;
@@ -17,9 +42,11 @@ td, th {
 tr:nth-child(even) {
   background-color: #dddddd;
 }
+
 </style>
 </head>
 <body>
+
 <form>
   <h4>Book Name:<br> </h4>
   <input type="text">
