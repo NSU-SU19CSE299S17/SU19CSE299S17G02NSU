@@ -36,23 +36,34 @@ class ProfileUpdateForm(forms.ModelForm):
 
 
 TRUE_FALSE_CHOICES = (
-    ('horror', 'horror'),
-    ('novel', 'novel')
+    ('Horror', 'Horror'),
+    ('novel', 'novel'),
+    ('Science Fiction', 'Science Fiction'),
+    ('Speculative fiction', 'Speculative fiction'),
+    ('Fiction', 'Fiction'),
+    ('Mystery', 'Mystery'),
+    ('Crime Fiction', 'Crime Fiction'),
+    ('Thriller', 'Thriller'),
+    ('Fantasy', 'Fantasy'),
+    ('Historical fiction', 'Historical fiction'),
+    ('Satire', 'Satire'),
+    ('Autobiography', 'Autobiography'),
+    ('Non-fiction', 'Non-fiction'),
+    ('Autobiographical movel', 'Autobiographical movel'),
+    ('History', 'History'),
+    ('Biography', 'Biography'),
+    ('Western', 'Western'),
+    ('Romance novel', 'Romance novel'),
+
 )
-
-
-
-
 
 
 
 class MyLibraryUpdateForm(forms.Form):
 
 
-    user = forms.CharField(max_length=11,)  # always 11 digit 01700000000
-    name = forms.CharField(label="Phone Number*", max_length=11,)  # always 11 digit 01700000000
-    # phone_number.widget = forms.TextInput(attrs={'size': 45, 'placeholder': 'Enter your phone number (11 digits)'})
-
+    user = forms.CharField(max_length=11,)
+    name = forms.CharField(label="Phone Number*", max_length=11,)
     author = forms.CharField(label="Business Name*")
 
 
@@ -60,14 +71,3 @@ class MyLibraryUpdateForm(forms.Form):
                               initial='', widget=forms.Select(), required=True)
 
     # do_you_have_a_TIN.widget = forms.ChoiceField(attrs={'size': 45,})
-
-
-
-
-
-
-
-
-
-
-
