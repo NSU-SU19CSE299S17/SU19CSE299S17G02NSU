@@ -23,9 +23,9 @@ class Profile(models.Model):
 
 class Books(models.Model):
     user = models.ForeignKey(User, on_delete=models.CASCADE)
-    genre = models.CharField(max_length=30, blank=False, null=False)
-    author = models.CharField(max_length=30)
-    name = models.CharField(max_length=30, blank=False, null=False)
+    genre = models.CharField(max_length=50, blank=False, null=False)
+    author = models.CharField(max_length=50)
+    name = models.CharField(max_length=50, blank=False, null=False)
 
     def __str__(self):
         return self.name
