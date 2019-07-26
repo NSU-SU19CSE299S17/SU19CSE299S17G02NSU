@@ -1,11 +1,8 @@
 from django.shortcuts import render, redirect
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
-
-from Users.models import Books
 from .forms import UserRegisterForm,  UserUpdateForm, ProfileUpdateForm, MyLibraryUpdateForm
 from django.shortcuts import render_to_response
-from django.db.models import Q
 
 
 
@@ -47,25 +44,4 @@ def profile(request):
     return render(request, 'users/profile.html', context)
 
 def mylibrary(request):
-
-    # print(1)
-    form = MyLibraryUpdateForm()
-    # print(12)
-    if request.method == 'POST':
-        form = MyLibraryUpdateForm(request.POST)
-        if form.is_valid():
-            print(form.cleaned_data)
-            form.user=request.user
-            print(form.cleaned_data)
-            Books.objects.create(**form.cleaned_data)
-            form = MyLibraryUpdateForm()
-        else:
-            print(form.errors)
-
-    # print(123)
-    context = {
-        'form': form
-    }
-    return render(request, 'users/MyLibrary.html', context)
-
-    # return render(request, "registration.html", context)
+    return render_to_response('users/MyLibrary.html')
