@@ -15,3 +15,11 @@ book_description_matrix = books_tfidf.fit_transform(book_description['Plot'])
 
 # computing cosine similarity matrix using linear_kernal of sklearn
 cosine_similarity = linear_kernel(book_description_matrix, book_description_matrix)
+
+indices = pd.Series(book_description['Title'].index)
+
+def customs(name):
+    hope = book_description.loc[book_description['Title'] == name]
+    m = hope.Book_ID
+    m = m-1
+    return(m)
