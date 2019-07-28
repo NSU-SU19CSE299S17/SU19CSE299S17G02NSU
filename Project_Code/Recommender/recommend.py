@@ -23,3 +23,12 @@ def customs(name):
     m = hope.Book_ID
     m = m-1
     return(m)
+
+# Function to get the most similar books
+def recommend(index, cosine_sim=cosine_similarity):
+    id = indices[index]
+    # Get the pairwsie similarity scores of all books compared to that book,
+    # sorting them and getting top 5
+    similarity_scores = list(enumerate(cosine_sim[id]))
+    similarity_scores = sorted(similarity_scores, key=lambda x: x[1], reverse=True)
+    similarity_scores = similarity_scores[1:6]
