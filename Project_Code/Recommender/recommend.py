@@ -32,3 +32,9 @@ def recommend(index, cosine_sim=cosine_similarity):
     similarity_scores = list(enumerate(cosine_sim[id]))
     similarity_scores = sorted(similarity_scores, key=lambda x: x[1], reverse=True)
     similarity_scores = similarity_scores[1:6]
+
+    # Get the books index
+    books_index = [i[0] for i in similarity_scores]
+
+    # Return the top 5 most similar books using integer-location based indexing (iloc)
+    return book_description['Title'].iloc[books_index]
