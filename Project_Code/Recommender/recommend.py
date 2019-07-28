@@ -1,10 +1,14 @@
 import pandas as pd
+import  csv
 from sklearn.metrics.pairwise import linear_kernel
 from sklearn.feature_extraction.text import TfidfVectorizer
 
 
-book_description = pd.read_csv('.../Documentation/Dataset/DATA set.csv', encoding = 'latin-1')
-book_description = book_description[['Book_ID','Title','Author','Genre1','Genre2','Plot']]
+
+#book_description = pd.read_csv('DATA set.csv', encoding = 'latin-1')
+with open('DATA set.csv') as csvfile:
+ book_description = csv.DictReader(csvfile)
+ book_description = book_description[['Book_ID','Title','Author','Genre1','Genre2','Plot']]
 
 # removing the stop words
 books_tfidf = TfidfVectorizer(stop_words='english')
@@ -38,4 +42,5 @@ def recommend(index, cosine_sim=cosine_similarity):
     books_index = [i[0] for i in similarity_scores]
 
     # Return the top 5 most similar books using integer-location based indexing (iloc)
-    return book_description['Title'].iloc[books_index]
+    #return list(book_description['Title'].iloc[books_index])
+    return '    '.join(list(book_description['Title'].iloc[books_index]))
