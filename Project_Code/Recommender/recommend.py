@@ -12,3 +12,6 @@ book_description['Plot'] = book_description['Plot'].fillna('')
 
 # computing TF-IDF matrix required for calculating cosine similarity
 book_description_matrix = books_tfidf.fit_transform(book_description['Plot'])
+
+# computing cosine similarity matrix using linear_kernal of sklearn
+cosine_similarity = linear_kernel(book_description_matrix, book_description_matrix)
