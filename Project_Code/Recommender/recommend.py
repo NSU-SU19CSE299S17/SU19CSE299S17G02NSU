@@ -2,6 +2,7 @@ import pandas as pd
 from sklearn.metrics.pairwise import linear_kernel
 from sklearn.feature_extraction.text import TfidfVectorizer
 
+
 book_description = pd.read_csv('.../Documentation/Dataset/DATA set.csv', encoding = 'latin-1')
 book_description = book_description[['Book_ID','Title','Author','Genre1','Genre2','Plot']]
 
@@ -20,7 +21,7 @@ indices = pd.Series(book_description['Title'].index)
 
 def customs(name):
     hope = book_description.loc[book_description['Title'] == name]
-    m = hope.Book_ID
+    m = int(hope.Book_ID)
     m = m-1
     return(m)
 
@@ -31,7 +32,7 @@ def recommend(index, cosine_sim=cosine_similarity):
     # sorting them and getting top 5
     similarity_scores = list(enumerate(cosine_sim[id]))
     similarity_scores = sorted(similarity_scores, key=lambda x: x[1], reverse=True)
-    similarity_scores = similarity_scores[1:6]
+    similarity_scores = similarity_scores[1:4]
 
     # Get the books index
     books_index = [i[0] for i in similarity_scores]
