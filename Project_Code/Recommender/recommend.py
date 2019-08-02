@@ -4,24 +4,13 @@ from sklearn.metrics.pairwise import linear_kernel
 from sklearn.feature_extraction.text import TfidfVectorizer
 
 
-
-#book_description = pd.read_csv('DATA set.csv', encoding = 'latin-1')
-with open('DATA set.csv') as csvfile:
- book_description = csv.DictReader(csvfile)
- book_description = book_description[['Book_ID','Title','Author','Genre1','Genre2','Plot']]
-
-# removing the stop words
-books_tfidf = TfidfVectorizer(stop_words='english')
-# filling the missing values with empty string
-book_description['Plot'] = book_description['Plot'].fillna('')
-
-# computing TF-IDF matrix required for calculating cosine similarity
-book_description_matrix = books_tfidf.fit_transform(book_description['Plot'])
-
-# computing cosine similarity matrix using linear_kernal of sklearn
-cosine_similarity = linear_kernel(book_description_matrix, book_description_matrix)
-
-indices = pd.Series(book_description['Title'].index)
+book_description = pd.read_csv('E:/DATA set.csv', encoding = 'latin-1')
+for line in book_description:
+   books_tfidf = TfidfVectorizer(stop_words='english')
+   book_description['Plot'] = book_description['Plot'].fillna('')
+   book_description_matrix = books_tfidf.fit_transform(book_description['Plot'])
+   cosine_similarity = linear_kernel(book_description_matrix, book_description_matrix)
+   indices = pd.Series(book_description['Title'].index)
 
 def customs(name):
     hope = book_description.loc[book_description['Title'] == name]
