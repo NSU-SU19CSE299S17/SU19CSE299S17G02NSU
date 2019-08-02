@@ -46,11 +46,10 @@ def profile(request):
 
     return render(request, 'users/profile.html', context)
 
+@login_required
 def mylibrary(request):
-
-    # print(1)
     form = MyLibraryUpdateForm()
-    # print(12)
+
     if request.method == 'POST':
         form = MyLibraryUpdateForm(request.POST)
         if form.is_valid():
@@ -62,10 +61,8 @@ def mylibrary(request):
         else:
             print(form.errors)
 
-    # print(123)
+
     context = {
         'form': form
     }
     return render(request, 'users/MyLibrary.html', context)
-
-    # return render(request, "registration.html", context)
