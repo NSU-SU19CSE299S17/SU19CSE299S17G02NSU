@@ -55,38 +55,55 @@ tr:nth-child(even) {
         </div>
 </div>
 
-<form>
-  <h4>Book Name:<br> </h4>
-  <input type="text">
-  <br>
-  <h4>Genre:<br></h4>
-  <input type="text">
-  <br>
-  <h4>Author Name:<br></h4>
-  <input type="text">
-  <br>
-  <br>
-  <input type="submit" value="Submit">
-</form>
+<!--<form>-->
+<!--  <h4>Book Name:<br> </h4>-->
+<!--  <input type="text">-->
+<!--  <br>-->
+<!--  <h4>Genre:<br></h4>-->
+<!--  <input type="text">-->
+<!--  <br>-->
+<!--  <h4>Author Name:<br></h4>-->
+<!--  <input type="text">-->
+<!--  <br>-->
+<!--  <br>-->
+<!--  <input type="submit" value="Submit">-->
+<!--</form>-->
+
+
+
+              <div>
+                  <form action="." method='POST' >
+                    {% csrf_token %}
+                    {{ form.as_p }}
+                    <input type="submit" value="OK">
+                  </form>
+
+<!--{#			   <a class="button w-button smoothscroll">Become a Monisho Supplier</a>#}-->
+
+              </div>
 
 <h2>My Books Library:</h2>
 
 <table>
   <tr>
-    <th>Book Name</th>
-    <th>Genre</th>
-    <th>Author</th>
+      <th>Book Name</th>
+      <th>Genre</th>
+      <th>Author</th>
+      <th>Recommendation</th>
   </tr>
-  <tr>
+    <tr>
 
-  </tr>
-  <tr>
+    </tr>
+    <tr>
 
-  </tr>
+    </tr>
 
-  <tr>
+    <tr>
 
-  </tr>
+    </tr>
+    <tr>
+
+    </tr>
 </table>
 
 </body>
