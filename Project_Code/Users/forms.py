@@ -9,8 +9,9 @@ class UserRegisterForm(UserCreationForm):
     email = forms.EmailField()
 
     class Meta:
-         model = User
-         fields = ['username', 'email', 'password1', 'password2']
+       model = User
+       fields = ['username', 'email', 'password1', 'password2']
+
 
 class UserUpdateForm(forms.ModelForm):
     email = forms.EmailField()
@@ -19,20 +20,11 @@ class UserUpdateForm(forms.ModelForm):
         model = User
         fields = ['username', 'email']
 
+
 class ProfileUpdateForm(forms.ModelForm):
     class Meta:
         model = Profile
         fields = ['image']
-
-
-
-
-
-
-
-
-
-
 
 
 TRUE_FALSE_CHOICES = (
@@ -58,14 +50,9 @@ TRUE_FALSE_CHOICES = (
 )
 
 
-
 class MyLibraryUpdateForm(forms.Form):
-
-
     user = forms.CharField(max_length=11)
     name = forms.CharField(label="Book name*", max_length=30,)
     author = forms.CharField(label="Author")
-
-
     genre = forms.ChoiceField(choices=TRUE_FALSE_CHOICES, label="Genre",
                               initial='', widget=forms.Select(), required=True)
