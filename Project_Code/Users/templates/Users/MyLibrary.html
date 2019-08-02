@@ -52,6 +52,25 @@ tr:nth-child(even) {
             <div class="navbar-header">
                 <a class="logo" >Bookworm</a>
             </div>
+            <div class=" nav-btns topnav-right" >
+                {% if user.is_authenticated %}
+                           <a href= "{% url 'logout' %}" >
+                    <button style="color: white; background: transparent; ">Logout</button>
+                </a>
+
+                         {% else %}
+                         <!--Added Login button -->
+                            <a href= "{% url 'login' %}" style="color: white; background: transparent; ">
+                                <button style="color: white; background: transparent; ">Login</button>
+                            </a>
+                         {% endif %}
+                <button href="#" >Browser</button>
+                <a href="{% url 'profile' %}" style="color: white; background: transparent; ">
+                    <button style="color: white; background: transparent; ">Profile</button>
+                </a>
+                <button href="#" >Recommendations</button>
+
+            </div>
         </div>
 </div>
 
