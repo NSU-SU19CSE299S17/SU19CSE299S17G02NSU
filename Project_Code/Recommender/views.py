@@ -7,10 +7,21 @@ from .recommend import recommend
 # Create your views here.
 
 def Recommender(request):
-  return render(request, 'Recommender/Recommender.html')
-  return HttpResponse (template.render(context,request))
+  if request.method == 'POST':
+    srch = request.POST['srh']
+
+    if srch:
+      fin = recommend(customs(srch))
+
+      if fin:
+        return render(request, 'Recommender/Recommender.html', {'sr': fin})
+      else:
+        raise Exception('Not Found!!')
+
+    else:
+      return render(request, 'Recommender/Recommender.html')
 
 
-def output(request):
-  return render(request, 'Recommender.html', {'output': recommend(customs('Playing with Fire'))})
-
+  else:
+    return render(request, 'Recommender/Recommender.html')
+    return HttpResponse(template.render(context, request))

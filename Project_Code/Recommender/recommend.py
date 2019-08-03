@@ -32,4 +32,8 @@ def recommend(index, cosine_sim=cosine_similarity):
 
     # Return the top 5 most similar books using integer-location based indexing (iloc)
     #return list(book_description['Title'].iloc[books_index])
-    return '    '.join(list(book_description['Title'].iloc[books_index]))
+
+    meep = list(book_description['Title'].iloc[books_index])
+    fin = meep
+    #fin = {"B1": meep[0], "B2": meep[1], "B3": meep[2]}
+    return fin
