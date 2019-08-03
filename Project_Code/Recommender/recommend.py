@@ -22,20 +22,21 @@ def customs(name):
 
 # Function to get the most similar books
 def recommend(index, cosine_sim=cosine_similarity):
-    id = indices[index]
-    # Get the pairwsie similarity scores of all books compared to that book,
-    # sorting them and getting top 5
-    similarity_scores = list(enumerate(cosine_sim[id]))
-    similarity_scores = sorted(similarity_scores, key=lambda x: x[1], reverse=True)
-    similarity_scores = similarity_scores[1:4]
+    if (index == None):
+        return "No Such book exist in our database"
+    else:
+        id = indices[index]
+        # Get the pairwsie similarity scores of all books compared to that book,
+        # sorting them and getting top 5
+        similarity_scores = list(enumerate(cosine_sim[id]))
+        similarity_scores = sorted(similarity_scores, key=lambda x: x[1], reverse=True)
+        similarity_scores = similarity_scores[1:4]
 
-    # Get the books index
-    books_index = [i[0] for i in similarity_scores]
+        # Get the books index
+        books_index = [i[0] for i in similarity_scores]
 
-    # Return the top 5 most similar books using integer-location based indexing (iloc)
-    #return list(book_description['Title'].iloc[books_index])
+        # Return the top 5 most similar books using integer-location based indexing (iloc)
+        #return list(book_description['Title'].iloc[books_index])
 
-    meep = list(book_description['Title'].iloc[books_index])
-    fin = meep
-    #fin = {"B1": meep[0], "B2": meep[1], "B3": meep[2]}
-    return fin
+        meep = list(book_description['Title'].iloc[books_index])
+        return meep
