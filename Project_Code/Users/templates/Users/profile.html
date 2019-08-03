@@ -53,13 +53,10 @@
                                 <button style="color: white; background: transparent; ">Login</button>
                             </a>
                          {% endif %}
-                                <button href="#" >Browser</button>
 
-
-                <a href= "{% url 'mylibrary' %}">
-                <button style="color: white; background: transparent; ">My Library</button>
-                </a>
-                <button href="#" >Recommendations</button>
+                <a href="{% url 'browser'%}"> <button style="color: white; background: transparent; ">Browser</button>    </a>
+                <a href= "{% url 'mylibrary' %}">   <button style="color: white; background: transparent; ">My Library</button> </a>
+                <button style="color: white; background: transparent; " >Recommendations</button>
 
             </div>
         </div>
