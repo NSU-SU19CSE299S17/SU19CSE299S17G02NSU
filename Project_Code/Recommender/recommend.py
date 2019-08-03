@@ -13,10 +13,12 @@ for line in book_description:
    indices = pd.Series(book_description['Title'].index)
 
 def customs(name):
-    hope = book_description.loc[book_description['Title'] == name]
-    m = int(hope.Book_ID)
-    m = m-1
-    return(m)
+    for Title in book_description['Title']:
+        if (name == Title):
+            hope = book_description.loc[book_description['Title'] == name]
+            m = int(hope.Book_ID)
+            m = m-1
+            return(m)
 
 # Function to get the most similar books
 def recommend(index, cosine_sim=cosine_similarity):
