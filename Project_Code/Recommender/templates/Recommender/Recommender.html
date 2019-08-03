@@ -51,6 +51,31 @@
  </div>
 
 <div>
+    <form method="post" action="/Recommender/">
+                    {% csrf_token %}
+
+                    <div class=" form-group wrap ">
+                        <div class="search">
+                             <input type = "text" name="srh" class="form-control searchTerm " placeholder="enter">
+                        </div>
+
+                             <button type="submit" > Search </button>
+                    </div>
+
+                 </form>
+
+    <br> <br> <br> <br><br>
+
+                <div style=" padding: 60px">
+                    {% if sr %}
+                    {{ sr }}
+                       <!--{% for k in sr %}
+                          {{ sr }}
+                       #{% endfor %}   -->
+
+                    {% endif %}
+
+                </div>
 
 
 </div>
