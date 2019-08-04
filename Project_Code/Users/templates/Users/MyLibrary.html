@@ -91,13 +91,21 @@ tr:nth-child(even) {
 
 
               <div>
-                  <form action="." method='POST' >
+                  <form method="post" action="/Users/">
                     {% csrf_token %}
-                    {{ form.as_p }}
-                    <input type="submit" value="OK">
-                  </form>
 
-<!--{#			   <a class="button w-button smoothscroll">Become a Monisho Supplier</a>#}-->
+                    <div class=" form-group wrap ">
+                        <div class="Save">
+                             <input type = "text" name="name" class="form-control searchTerm " placeholder="Book Title">
+                            <input type = "text" name="author" class="form-control searchTerm " placeholder="Author">
+                            <input type = "text" name="genre" class="form-control searchTerm " placeholder="Genre">
+                        </div>
+
+                             <button type="submit" > Save </button>
+                    </div>
+
+                 </form>
+
 
               </div>
 
