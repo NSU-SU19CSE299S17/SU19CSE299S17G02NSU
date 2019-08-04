@@ -46,7 +46,7 @@ def profile(request):
 
 @login_required
 def mylibrary(request):
-    #current_user = request.user
+    current_user = request.user
     form = MyLibraryUpdateForm()
 
     if request.method == 'POST':
@@ -56,8 +56,9 @@ def mylibrary(request):
             Name = form.name
             Author = form.author
             Genre = form.genre
-            foo = MyLibraryList.objects.create(name=Name, author=Author, genre=Genre)
-            form.user=request.user
+            f1 = MyLibraryList.objects.create(name=Name, author=Author, genre=Genre)
+            f2 = UserList.objects.create(UserID=current_user, BookID=f1)
+
             print(form.cleaned_data)
             MyLibraryList.objects.create(**form.cleaned_data)
             form = MyLibraryUpdateForm()
