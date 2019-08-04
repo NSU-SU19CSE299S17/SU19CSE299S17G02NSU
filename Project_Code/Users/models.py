@@ -1,4 +1,3 @@
-from django.db import models
 from django.contrib.auth.models import User
 from PIL import Image
 from django.db import models
@@ -21,10 +20,18 @@ class Profile(models.Model):
             img.thumbnail(output_size)
             img.save(self.image.path)
 
-class BookList(models.Model):
-    name = models.CharField(max_length=50, blank=False, null=False)
-    genre = models.CharField(max_length=50, blank=False, null=False)
-    author = models.CharField(max_length=50)
+class MyLibraryList(models.Model):
 
-    def __str__(self):
-        return self.name
+    name = models.CharField(max_length=50)
+    author = models.CharField(max_length=50)
+    genre = models.CharField(max_length=50)
+
+def __str__(self):
+    return self.name
+
+class UserList(models.Model):
+    UserID = models.ForeignKey(User, on_delete=models.CASCADE)
+    BookID = models.ManyToManyField(MyLibraryList)
+
+def __str__(self):
+    return self.UserID
