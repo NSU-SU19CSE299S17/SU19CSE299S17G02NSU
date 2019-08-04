@@ -22,11 +22,9 @@ class Profile(models.Model):
             img.save(self.image.path)
 
 class BookList(models.Model):
-    user = models.ForeignKey(User, on_delete=models.CASCADE)
     name = models.CharField(max_length=50, blank=False, null=False)
     genre = models.CharField(max_length=50, blank=False, null=False)
     author = models.CharField(max_length=50)
-
 
     def __str__(self):
         return self.name
