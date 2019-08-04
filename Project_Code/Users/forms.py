@@ -51,7 +51,6 @@ TRUE_FALSE_CHOICES = (
 
 
 class MyLibraryUpdateForm(forms.Form):
-    user = forms.CharField(max_length=11)
     name = forms.CharField(label="Book name*", max_length=30,)
     author = forms.CharField(label="Author")
     genre = forms.ChoiceField(choices=TRUE_FALSE_CHOICES, label="Genre",
