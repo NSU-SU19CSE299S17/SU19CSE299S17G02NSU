@@ -4,9 +4,6 @@ from django.contrib.auth.decorators import login_required
 
 from .models import MyLibraryList
 from .forms import UserRegisterForm,  UserUpdateForm, ProfileUpdateForm, MyLibraryUpdateForm
-from django.shortcuts import render_to_response
-from django.db.models import Q
-
 
 
 def register(request):
@@ -48,12 +45,17 @@ def profile(request):
 
 @login_required
 def mylibrary(request):
+    #current_user = request.user
     form = MyLibraryUpdateForm()
 
     if request.method == 'POST':
         form = MyLibraryUpdateForm(request.POST)
         if form.is_valid():
             print(form.cleaned_data)
+            Name = form.name
+            Author = form.author
+            Genre = form.genre
+            foo = MyLibraryList.objects.create(name=Name, author=Author, genre=Genre)
             form.user=request.user
             print(form.cleaned_data)
             MyLibraryList.objects.create(**form.cleaned_data)
