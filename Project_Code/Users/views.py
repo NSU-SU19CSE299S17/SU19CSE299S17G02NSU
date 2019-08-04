@@ -2,7 +2,7 @@ from django.shortcuts import render, redirect
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 
-from .models import BookList
+from .models import MyLibraryList
 from .forms import UserRegisterForm,  UserUpdateForm, ProfileUpdateForm, MyLibraryUpdateForm
 from django.shortcuts import render_to_response
 from django.db.models import Q
@@ -56,7 +56,7 @@ def mylibrary(request):
             print(form.cleaned_data)
             form.user=request.user
             print(form.cleaned_data)
-            Books.objects.create(**form.cleaned_data)
+            MyLibraryList.objects.create(**form.cleaned_data)
             form = MyLibraryUpdateForm()
         else:
             print(form.errors)
