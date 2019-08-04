@@ -58,6 +58,7 @@ def mylibrary(request):
 
         else:
             raise Exception('User doesnt exist')
+            return render(request, 'users/MyLibrary.html')
 
     else:
-        return render(request, 'Users/MyLibrary.html')
+        return render(request, 'users/MyLibrary.html')
