@@ -31,7 +31,7 @@ def __str__(self):
 
 class UserList(models.Model):
     UserID = models.ForeignKey(User, on_delete=models.CASCADE)
-    BookID = models.ManyToManyField(MyLibraryList)
+    BookID = models.ForeignKey(MyLibraryList, on_delete=models.CASCADE, default='', null=True)
 
 def __str__(self):
     return self.UserID
