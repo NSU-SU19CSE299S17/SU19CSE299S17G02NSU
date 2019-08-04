@@ -46,27 +46,18 @@ def profile(request):
 
 @login_required
 def mylibrary(request):
-    current_user = request.user
-    form = MyLibraryUpdateForm()
-
     if request.method == 'POST':
-        form = MyLibraryUpdateForm(request.POST)
-        if form.is_valid():
-            print(form.cleaned_data)
-            Name = form.name
-            Author = form.author
-            Genre = form.genre
+        Name = request.POST['name']
+        Author = request.POST['author']
+        Genre = request.POST['genre']
+        current_user = request.user
+
+        if request.user.is_authenticated:
             f1 = MyLibraryList.objects.create(name=Name, author=Author, genre=Genre)
             f2 = UserList.objects.create(UserID=current_user, BookID=f1)
 
-            print(form.cleaned_data)
-            MyLibraryList.objects.create(**form.cleaned_data)
-            form = MyLibraryUpdateForm()
         else:
-            print(form.errors)
+            raise Exception('User doesnt exist')
 
-
-    context = {
-        'form': form
-    }
-    return render(request, 'users/MyLibrary.html', context)
+    else:
+        return render(request, 'Users/MyLibrary.html')
