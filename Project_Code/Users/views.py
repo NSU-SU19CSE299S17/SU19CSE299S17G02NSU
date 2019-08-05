@@ -62,3 +62,18 @@ def mylibrary(request):
 
     else:
         return render(request, 'users/MyLibrary.html')
+
+
+def viewBooks(request):
+    current_user = request.user
+    current_Books = UserList.objects.get(UserID=current_user)
+    B = current_Books.BookID
+    obj = MyLibraryList.objects.get(ID=B)
+
+    context = {
+        'name' : obj.name,
+        'author' : obj.author,
+        'genre' :  obj.genre
+    }
+
+    return render(request,'users/MyLibrary.html', context)
