@@ -75,20 +75,6 @@ tr:nth-child(even) {
 </div>
 
 
-<!--<form>-->
-<!--  <h4>Book Name:<br> </h4>-->
-<!--  <input type="text">-->
-<!--  <br>-->
-<!--  <h4>Genre:<br></h4>-->
-<!--  <input type="text">-->
-<!--  <br>-->
-<!--  <h4>Author Name:<br></h4>-->
-<!--  <input type="text">-->
-<!--  <br>-->
-<!--  <br>-->
-<!--  <input type="submit" value="Submit">-->
-<!--</form>-->
-
 
               <div>
                   <form method="post" action="/mylibrary/">
@@ -111,6 +97,8 @@ tr:nth-child(even) {
 
 <h2>My Books Library:</h2>
 
+{% block content %}
+
 <table>
   <tr>
       <th>Book Name</th>
@@ -132,6 +120,8 @@ tr:nth-child(even) {
 
     </tr>
 </table>
+
+{% endblock %}
 
 </body>
 </html>
