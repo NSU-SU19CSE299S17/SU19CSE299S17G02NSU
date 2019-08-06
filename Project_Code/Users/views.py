@@ -1,9 +1,11 @@
 from django.shortcuts import render, redirect
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
+from django.db.models import Q
+from django.contrib.auth.mixins import LoginRequiredMixin
+from django.views.generic import ListView
 
 from .models import MyLibraryList
-from .models import UserList
 from .forms import UserRegisterForm,  UserUpdateForm, ProfileUpdateForm, MyLibraryUpdateForm
 
 
@@ -53,9 +55,7 @@ def mylibrary(request):
         current_user = request.user
 
         if request.user.is_authenticated:
-            f1 = MyLibraryList.objects.create(name=Name, author=Author, genre=Genre)
-            f2 = UserList.objects.create(UserID=current_user, BookID=f1)
-
+            f1 = MyLibraryList.objects.create(UserID=current_user, name=Name, author=Author, genre=Genre)
         else:
             raise Exception('User doesnt exist')
             return render(request, 'users/MyLibrary.html')
@@ -64,16 +64,17 @@ def mylibrary(request):
         return render(request, 'users/MyLibrary.html')
 
 
-def viewBooks(request):
-    current_user = request.user
-    current_Books = UserList.objects.get(UserID=current_user)
-    B = current_Books.BookID
-    obj = MyLibraryList.objects.get(ID=B)
+class viewBooks(LoginRequiredMixin, ListView):
+      model = MyLibraryList
+      template_name = 'Users/MyLibrary.html'
+      context_object_name = 'obj'
 
-    context = {
-        'name' : obj.name,
-        'author' : obj.author,
-        'genre' :  obj.genre
-    }
+      def get_queryset(self):
+          current_user = self.request.user
+          obj = MyLibraryList.objects.get(UserID=current_user)
 
-    return render(request,'users/MyLibrary.html', context)
+          context = {
+              'obj': obj
+          }
+
+          return render(context)
