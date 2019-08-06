@@ -21,17 +21,10 @@ class Profile(models.Model):
             img.save(self.image.path)
 
 class MyLibraryList(models.Model):
-
+    UserID = models.ForeignKey(User, on_delete=models.CASCADE,default='', null=True)
     name = models.CharField(max_length=50)
     author = models.CharField(max_length=50)
     genre = models.CharField(max_length=50)
 
 def __str__(self):
     return self.name
-
-class UserList(models.Model):
-    UserID = models.ForeignKey(User, on_delete=models.CASCADE)
-    BookID = models.ForeignKey(MyLibraryList, on_delete=models.CASCADE, default='', null=True)
-
-def __str__(self):
-    return self.UserID
