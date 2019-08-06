@@ -46,6 +46,7 @@ def profile(request):
 
     return render(request, 'users/profile.html', context)
 
+#following function takes user input and adds their books to the table
 @login_required
 def mylibrary(request):
     if request.method == 'POST':
@@ -63,7 +64,7 @@ def mylibrary(request):
     else:
         return render(request, 'users/MyLibrary.html')
 
-
+#following  class displays the list of books of the current user
 class viewBooks(LoginRequiredMixin, ListView):
       model = MyLibraryList
       template_name = 'Users/MyLibrary.html'

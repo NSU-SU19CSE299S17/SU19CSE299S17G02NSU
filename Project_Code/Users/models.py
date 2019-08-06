@@ -20,6 +20,7 @@ class Profile(models.Model):
             img.thumbnail(output_size)
             img.save(self.image.path)
 
+#folowing model keeps user's list of books read
 class MyLibraryList(models.Model):
     UserID = models.ForeignKey(User, on_delete=models.CASCADE,default='', null=True)
     name = models.CharField(max_length=50)
