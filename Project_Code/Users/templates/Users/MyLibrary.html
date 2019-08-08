@@ -99,25 +99,29 @@ tr:nth-child(even) {
 
 <h2 >My Books Library:</h2>
 
-    {% for item in obj %}
-        <table>
-            <tr>
-                <td style="font-weight: bold; color: rgb(6, 36, 36); padding-right: 20px"> Title </td>
-                <td> {{ obj.name }}</td>
-            </tr>
-            <br>
-            <tr>
-                <td style="font-weight: bold;color: rgb(6, 36, 36); padding-right: 20px "> Author </td>
-                <td> {{ obj.author }}</td>
-            </tr>
-            <br>
-             <tr>
-                <td style="font-weight: bold;color: rgb(6, 36, 36); padding-right: 20px "> Genre </td>
-                <td> {{ obj.genre }}</td>
-            </tr>
-        </table>
-    {% endfor %}
+    {% if obj %}
+        {% for item in obj %}
 
-   </div>
+           <table>
+                <tr>
+                   <td style="font-weight: bold; color: rgb(6, 36, 36); padding-right: 20px"> Title </td>
+                   <td> {{ item.name }}</td>
+                </tr>
+            <br>
+                <tr>
+                   <td style="font-weight: bold;color: rgb(6, 36, 36); padding-right: 20px "> Author </td>
+                   <td> {{ item.author }}</td>
+                </tr>
+            <br>
+                <tr>
+                   <td style="font-weight: bold;color: rgb(6, 36, 36); padding-right: 20px "> Genre </td>
+                   <td> {{ item.genre }}</td>
+                </tr>
+           </table>
+
+        {% endfor %}
+    {% endif %}
+
+</div>
 </body>
 </html>

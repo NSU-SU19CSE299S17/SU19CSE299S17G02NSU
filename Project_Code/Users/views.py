@@ -57,12 +57,16 @@ def mylibrary(request):
 
         if request.user.is_authenticated:
             f1 = MyLibraryList.objects.create(UserID=current_user, name=Name, author=Author, genre=Genre)
+            context = {
+                'c' : f1
+            }
+            return render(request, 'Users/mylibrary.html', context)
         else:
             raise Exception('User doesnt exist')
-            return render(request, 'users/MyLibrary.html')
+            return render(request, 'Users/mylibrary.html')
 
     else:
-        return render(request, 'users/MyLibrary.html')
+        return render(request, 'Users/mylibrary.html')
 
 #following  class displays the list of books of the current user
 class viewBooks(LoginRequiredMixin, ListView):
@@ -78,4 +82,4 @@ class viewBooks(LoginRequiredMixin, ListView):
               'obj': obj
           }
 
-          return render(context)
+          return context
