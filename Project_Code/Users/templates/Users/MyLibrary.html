@@ -64,7 +64,9 @@ tr:nth-child(even) {
                                 <button style="color: white; background: transparent; ">Login</button>
                             </a>
                          {% endif %}
-                <button href="#" >Browser</button>
+                <a href="{% url 'browser' %}">
+                <button style="color: white; background: transparent; ">Browser</button>
+                </a>
                 <a href="{% url 'profile' %}" style="color: white; background: transparent; ">
                     <button style="color: white; background: transparent; ">Profile</button>
                 </a>
