@@ -76,10 +76,10 @@ class viewBooks(LoginRequiredMixin, ListView):
 
       def get_queryset(self):
           current_user = self.request.user
-          obj = MyLibraryList.objects.get(UserID=current_user)
+          obj = MyLibraryList.objects.filter(UserID=current_user)
 
-          context = {
-              'obj': obj
-          }
+         # context = {
+            #  'obj': obj
+        #  }
 
-          return context
+          return obj
