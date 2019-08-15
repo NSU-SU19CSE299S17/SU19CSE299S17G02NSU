@@ -1,9 +1,11 @@
 import stripe
+
+
 from django.views.generic.base import TemplateView
 from django.conf import settings
-from django.shortcuts import render # new
+from django.shortcuts import render
 
-stripe.api_key = settings.STRIPE_SECRET_KEY # new
+stripe.api_key = settings.STRIPE_SECRET_KEY
 
 
 class HomePageView(TemplateView):
