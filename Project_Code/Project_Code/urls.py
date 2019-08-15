@@ -20,7 +20,7 @@ from django.conf import settings
 from django.conf.urls.static import static
 from django.urls import include, path
 from Users import views as user_views
-
+from Users import views as view
 
 urlpatterns = [
     path('admin/', admin.site.urls),
@@ -32,7 +32,7 @@ urlpatterns = [
     path('logout/', auth_views.LogoutView.as_view(template_name='users/logout.html'), name='logout'),
     path('mylibrary/', user_views.mylibrary, name='mylibrary'),
     path('Recommender/', include('Recommender.urls')),
-    path('payment/', user_views.mylibrary, name='payment'),
+    path('payment/', PaymentView.as_view(), name='payment'),
 
 ]
 
