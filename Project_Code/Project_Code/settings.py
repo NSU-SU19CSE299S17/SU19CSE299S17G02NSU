@@ -141,3 +141,5 @@ LOGIN_URL = 'login'
 LOGOUT_REDIRECT_URL = 'home'
 
 MYLIBRARY_REDIRECT_URL = 'mylibrary'
+
+PAYPAL_RECEIVER_EMAIL = 'xyz@gmail.com'
