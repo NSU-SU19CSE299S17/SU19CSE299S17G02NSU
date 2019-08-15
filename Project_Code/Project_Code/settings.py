@@ -44,7 +44,6 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-    'paypal.standard.ipn',
 
 ]
 
@@ -141,6 +140,3 @@ LOGIN_URL = 'login'
 LOGOUT_REDIRECT_URL = 'home'
 
 MYLIBRARY_REDIRECT_URL = 'mylibrary'
-
-#django-paypal settings
-PAYPAL_RECEIVER_EMAIL = 'isonalis.packtpub-test1@gmail.com'
