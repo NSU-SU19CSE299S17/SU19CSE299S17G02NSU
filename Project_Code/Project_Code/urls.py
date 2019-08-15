@@ -32,6 +32,8 @@ urlpatterns = [
     path('logout/', auth_views.LogoutView.as_view(template_name='users/logout.html'), name='logout'),
     path('mylibrary/', user_views.mylibrary, name='mylibrary'),
     path('Recommender/', include('Recommender.urls')),
+    path('payment/', user_views.mylibrary, name='payment'),
+
 ]
 
 
