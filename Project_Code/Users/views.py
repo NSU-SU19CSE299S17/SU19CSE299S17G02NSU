@@ -83,3 +83,9 @@ class viewBooks(LoginRequiredMixin, ListView):
         #  }
 
           return obj
+
+#following codes subject to payment
+class PaymentView(view):
+    def get(selfself, *args, **kwargs):
+        return render(self.request, "payment.html")
+
