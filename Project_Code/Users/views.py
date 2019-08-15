@@ -1,12 +1,15 @@
+import stripe
 from django.shortcuts import render, redirect
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
 from django.db.models import Q
 from django.contrib.auth.mixins import LoginRequiredMixin
 from django.views.generic import ListView
+from django.shortcuts import render
 
 from .models import MyLibraryList
 from .forms import UserRegisterForm,  UserUpdateForm, ProfileUpdateForm, MyLibraryUpdateForm
+stripe.api_key = settings.STRIPE_SECRET_KEY
 
 
 def register(request):
@@ -85,7 +88,12 @@ class viewBooks(LoginRequiredMixin, ListView):
           return obj
 
 #following codes subject to payment
-class PaymentView(view):
-    def get(selfself, *args, **kwargs):
-        return render(self.request, "payment.html")
-
+def charge(request): # new
+    if request.method == 'POST':
+        charge = stripe.Charge.create(
+            amount=500,
+            currency='usd',
+            description='A Django charge',
+            source=request.POST['stripeToken']
+        )
+        return render(request, 'charge.html')
