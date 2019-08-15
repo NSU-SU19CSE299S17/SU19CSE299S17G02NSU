@@ -4,5 +4,5 @@ from . import views
 
 urlpatterns = [
     path('charge/', views.charge, name='charge'),  # new
-    path('', views.HomePageView.as_view(), name='payments'),
+    path('', views.payments, name='payments'),
 ]

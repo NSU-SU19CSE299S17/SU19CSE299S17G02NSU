@@ -1,7 +1,6 @@
 from django import forms
 
 
-
 class PaymentForm(forms.Form):
     stripeToken = forms.CharField(required=False)
     save = forms.BooleanField(required=False)
