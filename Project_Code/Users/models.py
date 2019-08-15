@@ -3,6 +3,7 @@ from PIL import Image
 from django.db import models
 
 
+
 class Profile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     image = models.ImageField(default='default.jpg', upload_to='profile_pics')
@@ -29,3 +30,14 @@ class MyLibraryList(models.Model):
 
 def __str__(self):
     return self.name
+
+
+
+class Payment(models.Model):
+    stripe_charge_id = models.CharField(max_length=50)
+   # user = models.ForeignKey(settings.AUTH_USER_MODEL, on_delete=models.SET_NULL, blank=True, null=True)
+    amount = models.FloatField()
+    timestamp = models.DateTimeField(auto_now_add=True)
+
+    def __str__(self):
+        return self.user.username
