@@ -4,6 +4,7 @@ from django.contrib.auth.forms import UserCreationForm
 from .models import Profile
 
 
+
 # this file  inherits the exisitng register form so that we can add extra fields
 class UserRegisterForm(UserCreationForm):
     email = forms.EmailField()
@@ -55,3 +56,6 @@ class MyLibraryUpdateForm(forms.Form):
     author = forms.CharField(label="Author")
     genre = forms.ChoiceField(choices=TRUE_FALSE_CHOICES, label="Genre",
                               initial='', widget=forms.Select(), required=True)
+
+
+

@@ -44,7 +44,8 @@ INSTALLED_APPS = [
     'django.contrib.sessions',
     'django.contrib.messages',
     'django.contrib.staticfiles',
-
+    #'paypal.standard.ipn',
+    'payments.apps.PaymentsConfig',
 ]
 
 MIDDLEWARE = [
@@ -140,3 +141,6 @@ LOGIN_URL = 'login'
 LOGOUT_REDIRECT_URL = 'home'
 
 MYLIBRARY_REDIRECT_URL = 'mylibrary'
+
+STRIPE_SECRET_KEY = '<sk_test_HL3110d4EYc1tlcS0wojkpJA00y0yIJ0lQ>'
+STRIPE_PUBLISHABLE_KEY = '<pk_test_PVWR47lZNxEYslSVR9k3g9PB00JenNa0As>'
