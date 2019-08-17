@@ -56,7 +56,9 @@
 
                 <a href="{% url 'browser'%}"> <button style="color: white; background: transparent; ">Browser</button>    </a>
                 <a href= "{% url 'mylibrary' %}">   <button style="color: white; background: transparent; ">My Library</button> </a>
-                <button style="color: white; background: transparent; " >Recommendations</button>
+                <a href=" {% url 'Recommender' %}">
+                    <button style="color: white; background: transparent; " >Recommendations</button>
+                </a>
 
             </div>
         </div>
