@@ -69,12 +69,17 @@ def mylibrary(request):
         return render(request, 'Users/mylibrary.html')
 
 #following  class displays the list of books of the current user
-class viewBooks(LoginRequiredMixin, ListView):
-      model = MyLibraryList
-      template_name = 'Users/mylibrary.html'
-      context_object_name = 'obj'
+def viewBooks(request):
+    if request.method == 'POST':
+        show = request.POST['show']
+        current_user = request.user
 
-      def get_queryset(self):
-          current_user = self.request.user
-          return MyLibraryList.objects.all()
-              #filter(UserID=current_user)
+        if request.user.is_authenticated:
+            temp = MyLibraryList.objects.filter(UserID=current_user)
+            context = {
+                'obj' : temp.name
+            }
+
+            return render(request, 'Users/mylibrary.html', context)
+        else:
+            return render(request, 'Users/mylibrary.html')
