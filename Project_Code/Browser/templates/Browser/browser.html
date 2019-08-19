@@ -106,19 +106,21 @@
                     {% if sr %}
                        {% for k in sr %}
                           <table>
+                              <form action='actionUrl' method='GET'>
                               <tr>
                                     <td style="font-weight: bold; color: rgb(6, 36, 36); padding-right: 20px"> Title </td>
-                                    <td> {{ k.Title }}</td>
+                                    <td name="title"> {{ k.Title }}</td>
                               </tr>
                             <br>
                               <tr>
                                     <td style="font-weight: bold;color: rgb(6, 36, 36); padding-right: 20px "> Author </td>
-                                    <td> {{ k.Author }}</td>
+                                    <td name="author"> {{ k.Author }}</td>
                               </tr>
                               <br>
                               <tr>
-                                   <form action='actionUrl' method='GET'> <button type='submit'> Add to library</button> </form>
+                                    <button name="add-btn" type='submit'> Add to library</button>
                               </tr>
+                                  </form>
                           </table>
                        {% endfor %}
                     {% else %}
