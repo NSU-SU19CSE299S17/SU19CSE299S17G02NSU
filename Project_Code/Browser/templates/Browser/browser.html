@@ -109,6 +109,10 @@
                                     <td style="font-weight: bold;color: rgb(6, 36, 36); padding-right: 20px "> Author </td>
                                     <td> {{ k.Author }}</td>
                               </tr>
+                              <br>
+                              <tr>
+                                   <form action='actionUrl' method='GET'> <button type='submit'> Add to library</button> </form>
+                              </tr>
                           </table>
                        {% endfor %}
                     {% else %}
