@@ -64,66 +64,68 @@ tr:nth-child(even) {
                                 <button style="color: white; background: transparent; ">Login</button>
                             </a>
                          {% endif %}
-                <button href="#" >Browser</button>
+                <a href="{% url 'browser' %}">
+                <button style="color: white; background: transparent; ">Browser</button>
+                </a>
                 <a href="{% url 'profile' %}" style="color: white; background: transparent; ">
                     <button style="color: white; background: transparent; ">Profile</button>
                 </a>
-                <button href="#" >Recommendations</button>
+                <a href=" {% url 'Recommender' %}">
+                <button style="color: white; background: transparent; " >Recommendations</button>
+            </a>
 
             </div>
         </div>
 </div>
 
-<!--<form>-->
-<!--  <h4>Book Name:<br> </h4>-->
-<!--  <input type="text">-->
-<!--  <br>-->
-<!--  <h4>Genre:<br></h4>-->
-<!--  <input type="text">-->
-<!--  <br>-->
-<!--  <h4>Author Name:<br></h4>-->
-<!--  <input type="text">-->
-<!--  <br>-->
-<!--  <br>-->
-<!--  <input type="submit" value="Submit">-->
-<!--</form>-->
-
 
 
               <div>
-                  <form action="." method='POST' >
+                  <form method="post" action="/mylibrary/">
                     {% csrf_token %}
-                    {{ form.as_p }}
-                    <input type="submit" value="OK">
-                  </form>
 
-<!--{#			   <a class="button w-button smoothscroll">Become a Monisho Supplier</a>#}-->
+                    <div class=" form-group wrap ">
+                        <div class="Save">
+                             <input type = "text" name="name" class="form-control searchTerm " placeholder="Book Title">
+                            <input type = "text" name="author" class="form-control searchTerm " placeholder="Author">
+                            <input type = "text" name="genre" class="form-control searchTerm " placeholder="Genre">
+                        </div>
+
+                             <button type="submit" > Save </button>
+                    </div>
+
+                 </form>
+
 
               </div>
 
-<h2>My Books Library:</h2>
+<div  style=" padding: 60px;">
 
-<table>
-  <tr>
-      <th>Book Name</th>
-      <th>Genre</th>
-      <th>Author</th>
-      <th>Recommendation</th>
-  </tr>
-    <tr>
+<h2 >My Books Library:</h2>
 
-    </tr>
-    <tr>
+    {% if obj %}
+        {% for MyLibraryList in obj %}
 
-    </tr>
+           <table>
+                <tr>
+                   <td style="font-weight: bold; color: rgb(6, 36, 36); padding-right: 20px"> Title </td>
+                   <td> {{ MyLibraryList.name }}</td>
+                </tr>
+            <br>
+                <tr>
+                   <td style="font-weight: bold;color: rgb(6, 36, 36); padding-right: 20px "> Author </td>
+                   <td> {{ MyLibraryList.author }}</td>
+                </tr>
+            <br>
+                <tr>
+                   <td style="font-weight: bold;color: rgb(6, 36, 36); padding-right: 20px "> Genre </td>
+                   <td> {{ MyLibraryList.genre }}</td>
+                </tr>
+           </table>
 
-    <tr>
+        {% endfor %}
+    {% endif %}
 
-    </tr>
-    <tr>
-
-    </tr>
-</table>
-
+</div>
 </body>
 </html>

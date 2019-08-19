@@ -3,6 +3,7 @@ from PIL import Image
 from django.db import models
 
 
+
 class Profile(models.Model):
     user = models.OneToOneField(User, on_delete=models.CASCADE)
     image = models.ImageField(default='default.jpg', upload_to='profile_pics')
@@ -20,8 +21,9 @@ class Profile(models.Model):
             img.thumbnail(output_size)
             img.save(self.image.path)
 
+#folowing model keeps user's list of books read
 class MyLibraryList(models.Model):
-
+    UserID = models.ForeignKey(User, on_delete=models.CASCADE,default='', null=True)
     name = models.CharField(max_length=50)
     author = models.CharField(max_length=50)
     genre = models.CharField(max_length=50)
@@ -29,9 +31,5 @@ class MyLibraryList(models.Model):
 def __str__(self):
     return self.name
 
-class UserList(models.Model):
-    UserID = models.ForeignKey(User, on_delete=models.CASCADE)
-    BookID = models.ManyToManyField(MyLibraryList)
 
-def __str__(self):
-    return self.UserID
+

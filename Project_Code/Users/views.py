@@ -1,12 +1,12 @@
 from django.shortcuts import render, redirect
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
+from django.db.models import Q
+from django.contrib.auth.mixins import LoginRequiredMixin
+from django.views.generic import ListView
 
 from .models import MyLibraryList
 from .forms import UserRegisterForm,  UserUpdateForm, ProfileUpdateForm, MyLibraryUpdateForm
-from django.shortcuts import render_to_response
-from django.db.models import Q
-
 
 
 def register(request):
@@ -46,23 +46,35 @@ def profile(request):
 
     return render(request, 'users/profile.html', context)
 
+#following function takes user input and adds their books to the table
 @login_required
 def mylibrary(request):
-    form = MyLibraryUpdateForm()
-
     if request.method == 'POST':
-        form = MyLibraryUpdateForm(request.POST)
-        if form.is_valid():
-            print(form.cleaned_data)
-            form.user=request.user
-            print(form.cleaned_data)
-            MyLibraryList.objects.create(**form.cleaned_data)
-            form = MyLibraryUpdateForm()
+        Name = request.POST['name']
+        Author = request.POST['author']
+        Genre = request.POST['genre']
+        current_user = request.user
+
+        if request.user.is_authenticated:
+            f1 = MyLibraryList.objects.create(UserID=current_user, name=Name, author=Author, genre=Genre)
+            context = {
+                'c' : f1
+            }
+            return render(request, 'Users/mylibrary.html', context)
         else:
-            print(form.errors)
+            raise Exception('User doesnt exist')
+            return render(request, 'Users/mylibrary.html')
 
+    else:
+        return render(request, 'Users/mylibrary.html')
 
-    context = {
-        'form': form
-    }
-    return render(request, 'users/MyLibrary.html', context)
+#following  class displays the list of books of the current user
+class viewBooks(LoginRequiredMixin, ListView):
+      model = MyLibraryList
+      template_name = 'Users/mylibrary.html'
+      context_object_name = 'obj'
+
+      def get_queryset(self):
+          current_user = self.request.user
+          return MyLibraryList.objects.all()
+              #filter(UserID=current_user)
