@@ -71,15 +71,10 @@ def mylibrary(request):
 #following  class displays the list of books of the current user
 class viewBooks(LoginRequiredMixin, ListView):
       model = MyLibraryList
-      template_name = 'Users/MyLibrary.html'
+      template_name = 'Users/mylibrary.html'
       context_object_name = 'obj'
 
       def get_queryset(self):
           current_user = self.request.user
-          obj = MyLibraryList.objects.filter(UserID=current_user)
-
-         # context = {
-            #  'obj': obj
-        #  }
-
-          return obj
+          return MyLibraryList.objects.all()
+              #filter(UserID=current_user)
