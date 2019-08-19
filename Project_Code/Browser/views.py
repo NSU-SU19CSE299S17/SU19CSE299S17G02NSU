@@ -29,3 +29,9 @@ def browser(request):
 
   else:
     return render(request, 'Browser/browser.html')
+
+
+
+def AddBooks(request):
+    if request.GET.get('add-btn'):
+
