@@ -35,14 +35,15 @@ def browser(request):
 
 def AddBooks(request):
     if request.GET.get('add-btn'):
+        Title = request.get['title']
+        author = request.get['author']
         current_user = request.user
         if request.user.is_authenticated:
-            f1 = MyLibraryList.objects.create(UserID=current_user, name=Name, author=Author, genre=Genre)
+            f1 = MyLibraryList.objects.create(UserID=current_user, name=Title, author=author)
             context = {
                 'c' : f1
             }
-            return render(request, 'Users/mylibrary.html', context)
+            return render(request, 'Browser/browser.html', context)
         else:
-            raise Exception('User doesnt exist')
-            return render(request, 'Users/mylibrary.html')
+            return render(request, 'Browser/browser.html')
 
