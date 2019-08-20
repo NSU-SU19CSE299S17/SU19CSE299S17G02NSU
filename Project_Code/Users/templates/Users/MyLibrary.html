@@ -104,22 +104,22 @@ tr:nth-child(even) {
 <h2 >My Books Library:</h2>
 
     {% if obj %}
-        {% for MyLibraryList in obj %}
+        {% for k in obj %}
 
            <table>
                 <tr>
                    <td style="font-weight: bold; color: rgb(6, 36, 36); padding-right: 20px"> Title </td>
-                   <td> {{ MyLibraryList.name }}</td>
+                   <td> {{ k.name }}</td>
                 </tr>
             <br>
                 <tr>
                    <td style="font-weight: bold;color: rgb(6, 36, 36); padding-right: 20px "> Author </td>
-                   <td> {{ MyLibraryList.author }}</td>
+                   <td> {{ k.author }}</td>
                 </tr>
             <br>
                 <tr>
                    <td style="font-weight: bold;color: rgb(6, 36, 36); padding-right: 20px "> Genre </td>
-                   <td> {{ MyLibraryList.genre }}</td>
+                   <td> {{ k.genre }}</td>
                 </tr>
            </table>
 

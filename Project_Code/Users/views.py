@@ -57,24 +57,20 @@ def mylibrary(request):
 
         if request.user.is_authenticated:
             f1 = MyLibraryList.objects.create(UserID=current_user, name=Name, author=Author, genre=Genre)
+            temp = MyLibraryList.objects.filter(UserID=request.user)
             context = {
-                'c' : f1
-            }
+                'c' : f1,
+                'obj': temp,
+               }
             return render(request, 'Users/mylibrary.html', context)
         else:
             raise Exception('User doesnt exist')
             return render(request, 'Users/mylibrary.html')
 
     else:
-        return render(request, 'Users/mylibrary.html')
+        temp = MyLibraryList.objects.filter(UserID=request.user)
+        context = {
+            'obj': temp,
+        }
 
-#following  class displays the list of books of the current user
-class viewBooks(LoginRequiredMixin, ListView):
-      model = MyLibraryList
-      template_name = 'Users/mylibrary.html'
-      context_object_name = 'obj'
-
-      def get_queryset(self):
-          current_user = self.request.user
-          return MyLibraryList.objects.all()
-              #filter(UserID=current_user)
+        return render(request, 'Users/mylibrary.html', context)
