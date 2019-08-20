@@ -107,9 +107,10 @@ tr:nth-child(even) {
         {% for k in obj %}
 
            <table>
+                <form method="POST" action="/mylibrary/">
                 <tr>
                    <td style="font-weight: bold; color: rgb(6, 36, 36); padding-right: 20px"> Title </td>
-                   <td> {{ k.name }}</td>
+                    <td> <a name="srh" type="submit">{{ k.name }} </a></td>
                 </tr>
             <br>
                 <tr>
@@ -121,11 +122,17 @@ tr:nth-child(even) {
                    <td style="font-weight: bold;color: rgb(6, 36, 36); padding-right: 20px "> Genre </td>
                    <td> {{ k.genre }}</td>
                 </tr>
+               </form>
            </table>
 
         {% endfor %}
     {% endif %}
 
+</div>
+<div>
+     {% if sr %}
+          {{ sr }}
+     {% endif %}
 </div>
 </body>
 </html>
