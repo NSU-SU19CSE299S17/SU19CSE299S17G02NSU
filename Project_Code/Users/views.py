@@ -67,19 +67,3 @@ def mylibrary(request):
 
     else:
         return render(request, 'Users/mylibrary.html')
-
-#following  class displays the list of books of the current user
-def viewBooks(request):
-    if request.method == 'POST':
-        show = request.POST['show']
-        current_user = request.user
-
-        if request.user.is_authenticated:
-            temp = MyLibraryList.objects.filter(UserID=current_user)
-            context = {
-                'obj' : temp.name
-            }
-
-            return render(request, 'Users/mylibrary.html', context)
-        else:
-            return render(request, 'Users/mylibrary.html')
