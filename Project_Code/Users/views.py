@@ -57,13 +57,20 @@ def mylibrary(request):
 
         if request.user.is_authenticated:
             f1 = MyLibraryList.objects.create(UserID=current_user, name=Name, author=Author, genre=Genre)
+            temp = MyLibraryList.objects.filter(UserID=request.user)
             context = {
-                'c' : f1
-            }
+                'c' : f1,
+                'obj': temp,
+               }
             return render(request, 'Users/mylibrary.html', context)
         else:
             raise Exception('User doesnt exist')
             return render(request, 'Users/mylibrary.html')
 
     else:
-        return render(request, 'Users/mylibrary.html')
+        temp = MyLibraryList.objects.filter(UserID=request.user)
+        context = {
+            'obj': temp,
+        }
+
+        return render(request, 'Users/mylibrary.html', context)
