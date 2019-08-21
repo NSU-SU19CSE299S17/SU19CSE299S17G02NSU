@@ -37,6 +37,8 @@ urlpatterns = [
     path('payments/', include('payments.urls')),
     path('charge/', include('payments.urls')),
 
+    path('rc/', user_views.rc, name='rc'),
+
 
 ]
 

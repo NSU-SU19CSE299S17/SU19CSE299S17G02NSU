@@ -1,10 +1,8 @@
 from django.shortcuts import render, redirect
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
-from django.db.models import Q
-from django.contrib.auth.mixins import LoginRequiredMixin
-from django.views.generic import ListView
-
+from .recommend import customs
+from .recommend import recommend
 from .models import MyLibraryList
 from .forms import UserRegisterForm,  UserUpdateForm, ProfileUpdateForm, MyLibraryUpdateForm
 
@@ -74,3 +72,25 @@ def mylibrary(request):
         }
 
         return render(request, 'Users/mylibrary.html', context)
+
+
+
+def rc(request):
+    if request.method == 'POST':
+        temp = MyLibraryList.objects.filter(UserID=request.user)
+        context = {
+            'obj': temp,
+        }
+
+        for name in context.values():
+            fin = recommend(customs(name))
+            dict = {
+                'f' : fin
+            }
+
+            return render(request, 'Users/rc.html', dict)
+
+    else:
+        return render(request, 'Users/rc.html')
+        return HttpResponse(template.render(context, request))
+
