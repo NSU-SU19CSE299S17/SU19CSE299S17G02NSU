@@ -1,8 +1,8 @@
 from django.shortcuts import render, redirect
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
-from .recommend import customs
-from .recommend import recommend
+from ..Recommender.recommend import customs
+from ..Recommender.recommend import recommend
 
 from .models import MyLibraryList
 from .forms import UserRegisterForm,  UserUpdateForm, ProfileUpdateForm, MyLibraryUpdateForm
@@ -74,6 +74,11 @@ def mylibrary(request):
 
         return render(request, 'Users/mylibrary.html', context)
 
+#def Rbtn(request):
+    #if request.GET.get('Rbtn'):
+      #  n =request.GET('n')
+        #return render(request, 'Recommender/Recommender.html', n)
+
 
 def Recommender(request):
   if request.method == 'POST':
@@ -83,14 +88,14 @@ def Recommender(request):
       fin = recommend(customs(srch))
 
       if fin:
-        return render(request, 'Users/mylibrary.html', {'sr': fin})
+        return render(request, 'Recommender/Recommender.html', {'sr': fin})
       else:
         raise Exception('Not Found!!')
 
     else:
-      return render(request,'Users/mylibrary.html')
+      return render(request, 'Recommender/Recommender.html')
 
 
   else:
-    return render(request, 'Users/mylibrary.html')
+    return render(request, 'Recommender/Recommender.html')
     return HttpResponse(template.render(context, request))

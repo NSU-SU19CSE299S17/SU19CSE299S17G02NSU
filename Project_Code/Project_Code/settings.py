@@ -35,6 +35,7 @@ INSTALLED_APPS = [
     'Homepage.apps.HomepageConfig',
     'Browser.apps.BrowserConfig',
     'Users.apps.UsersConfig',
+    'Recommender.apps.RecommenderConfig',
 
     'crispy_forms',
     'django.contrib.admin',

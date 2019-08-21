@@ -4,5 +4,5 @@ from .models import MyLibraryList
 
 
 urlpatterns = [
-   # path('', views.Recommender, name='Recommender'),
+    path('', views.Recommender, name='Recommender'),
 ]
