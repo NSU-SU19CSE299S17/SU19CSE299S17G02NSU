@@ -82,7 +82,7 @@ def rc(request):
             'obj': temp,
         }
 
-        for name in context.values():
+        for name in context:
             fin = recommend(customs(name))
             dict = {
                 'f' : fin
