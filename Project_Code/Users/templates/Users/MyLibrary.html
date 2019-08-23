@@ -3,7 +3,7 @@
 <head>
   {% load staticfiles %}
 
-<link rel="stylesheet" type="text/css"  href="{% static 'users/MyLibrary.css' %}">
+<link rel="stylesheet" type="text/css"  href="{% static 'Users/MyLibrary.css' %}">
 
 
     <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
@@ -79,17 +79,18 @@ tr:nth-child(even) {
 
 
               <div>
+                  <h2 style=" padding-left: 60px;"> Add a book here:</h2>
                   <form method="post" action="/mylibrary/">
                     {% csrf_token %}
 
                     <div class=" form-group wrap ">
-                        <div class="Save">
+                        <div class="save">
                              <input type = "text" name="name" class="form-control searchTerm " placeholder="Book Title">
                             <input type = "text" name="author" class="form-control searchTerm " placeholder="Author">
                             <input type = "text" name="genre" class="form-control searchTerm " placeholder="Genre">
                         </div>
 
-                             <button type="submit" > Save </button>
+                             <button class="sbtn" type="submit" > Save </button>
                     </div>
 
                  </form>
@@ -98,6 +99,8 @@ tr:nth-child(even) {
               </div>
 
 <div  style=" padding: 60px;">
+    <br>
+    <br>
 
 <h2 >My Books Library:</h2>
 
