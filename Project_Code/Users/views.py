@@ -52,9 +52,12 @@ def mylibrary(request):
         Author = request.POST['author']
         Genre = request.POST['genre']
         current_user = request.user
+        bling = recommend(customs(Name))
+
+
 
         if request.user.is_authenticated:
-            f1 = MyLibraryList.objects.create(UserID=current_user, name=Name, author=Author, genre=Genre)
+            f1 = MyLibraryList.objects.create(UserID=current_user, name=Name, author=Author, genre=Genre, bling=bling)
             temp = MyLibraryList.objects.filter(UserID=request.user)
             context = {
                 'c' : f1,
@@ -77,18 +80,26 @@ def mylibrary(request):
 
 def rc(request):
     if request.method == 'POST':
-        temp = MyLibraryList.objects.filter(UserID=request.user)
-        context = {
-            'obj': temp,
-        }
 
-        for name in context:
-            fin = recommend(customs(name))
-            dict = {
-                'f' : fin
+        temp = MyLibraryList.objects.filter(UserID=request.user).values_list('name')
+
+        for item in temp:
+           bimbo = item.values()
+
+           dict = {
+              'f' : bimbo
             }
 
-            return render(request, 'Users/rc.html', dict)
+        return render(request, 'Users/rc.html', dict)
+
+        #if trial:
+          # hold = request.POST['trial']
+          # bing = recommend(customs(hold))
+
+          # context = {
+              # 'obj' : bing
+             #  }
+          # return render(request, 'Users/rc.html', context)
 
     else:
         return render(request, 'Users/rc.html')
