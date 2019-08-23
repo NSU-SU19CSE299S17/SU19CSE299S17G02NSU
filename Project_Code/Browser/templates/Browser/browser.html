@@ -90,16 +90,6 @@
 
                  </form>
 
-        <!--        <div>
-                     {% if messages %}
-                       <ul class="messages">
-                           {% for k in messages %}
-                           <li style="color:red"> {{ k }}</li>
-                           {% endfor %}
-                       </ul>
-                    {% endif %}
-                </div>   <br>     -->
-
     <br> <br> <br> <br><br>
 
                 <div style=" padding: 60px">
@@ -108,12 +98,18 @@
                           <table>
                               <tr>
                                     <td style="font-weight: bold; color: rgb(6, 36, 36); padding-right: 20px"> Title </td>
-                                    <td> {{ k.Title }}</td>
+                                    <td name="title"> {{ k.Title }}</td>
                               </tr>
                             <br>
                               <tr>
                                     <td style="font-weight: bold;color: rgb(6, 36, 36); padding-right: 20px "> Author </td>
-                                    <td> {{ k.Author }}</td>
+                                    <td name="author"> {{ k.Author }}</td>
+                              </tr>
+
+                             <br>
+                              <tr>
+                                    <td style="font-weight: bold;color: rgb(6, 36, 36); padding-right: 20px "> Summary </td>
+                                    <td name="author"> {{ k.Plot }}</td>
                               </tr>
                           </table>
                        {% endfor %}
