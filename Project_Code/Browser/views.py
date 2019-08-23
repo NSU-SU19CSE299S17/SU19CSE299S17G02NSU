@@ -2,9 +2,6 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from .models import Books
 from django.db.models import Q
-from django.contrib import messages
-from django.http import HttpResponseRedirect
-from ..Users.models import MyLibraryList
 
 
 # Create your views here.
@@ -30,20 +27,3 @@ def browser(request):
 
   else:
     return render(request, 'Browser/browser.html')
-
-
-
-def AddBooks(request):
-    if request.GET.get('add-btn'):
-        Title = request.get['title']
-        author = request.get['author']
-        current_user = request.user
-        if request.user.is_authenticated:
-            f1 = MyLibraryList.objects.create(UserID=current_user, name=Title, author=author)
-            context = {
-                'c' : f1
-            }
-            return render(request, 'Browser/browser.html', context)
-        else:
-            return render(request, 'Browser/browser.html')
-
