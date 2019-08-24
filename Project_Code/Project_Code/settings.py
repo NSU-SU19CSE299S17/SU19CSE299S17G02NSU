@@ -46,6 +46,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     #'paypal.standard.ipn',
     'payments.apps.PaymentsConfig',
+    'stripe',
 ]
 
 MIDDLEWARE = [
