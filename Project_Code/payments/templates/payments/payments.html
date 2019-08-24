@@ -1,3 +1,10 @@
+{% load static %}
+ <link rel="shortcut icon" href="{%  static 'images/favicon.png' %}">
+<!-- {% block extrahead %}
+    <link rel="shortcut icon" href="{% static 'payments/images/favicon.ico'  %}" />
+{% endblock %}
+ -->
+
 <h2>Buy for $5.00</h2>
 <form action="{% url 'charge' %}" method="post">
   {% csrf_token %}
@@ -8,6 +15,7 @@
     data-locale="auto">
 
 </script>
+</form>
 <script src="https://js.stripe.com/v3/"></script>
 
 <form action="/charge" method="post" id="payment-form">
