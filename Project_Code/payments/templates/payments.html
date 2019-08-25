@@ -5,7 +5,7 @@
 {% endblock %}
  -->
 
-<h2>Buy for $5.00</h2>
+<h2>Upgrade to Pro for $10 a Year</h2>
 <form action="{% url 'charge' %}" method="post">
   {% csrf_token %}
   <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
