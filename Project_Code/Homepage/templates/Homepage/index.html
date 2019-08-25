@@ -82,7 +82,9 @@
 <label for="cover-1">
 <figure class="album-cover">
 <img src="https://blondebeetnirvana.com/wp-content/uploads/2018/04/MarkMansonOnNotGivingAFck-e1523923607866.jpg" />
+     <a href="https://www.dansilvestre.com/the-subtle-art-of-not-giving-a-fuck-mark-manson/">
 <figcaption class="album-name">The Subtle Art of Not Giving a F*ck</figcaption>
+     </a>
 </figure>
 </label>
 </li>
@@ -92,7 +94,9 @@
 <label for="cover-2">
 <figure class="album-cover">
 <img src="https://media-market.edmodo.com/media/public/f26882dc15733fefc4f8b7114b11a1e114feb20c.jpg">
-<figcaption class="album-name">Pride and Prejudice</figcaption>
+<a href="https://www.sparknotes.com/lit/pride/summary/">
+    <figcaption class="album-name">Pride and Prejudice</figcaption>
+</a>
 </figure>
 </label>
 </li>
@@ -102,7 +106,9 @@
 <label for="cover-3">
 <figure class="album-cover">
 <img src="https://images-na.ssl-images-amazon.com/images/I/41s4xJZlEYL.jpg">
+    <a href="https://fourminutebooks.com/mans-search-for-meaning-summary/">
 <figcaption class="album-name">Man's Search For Meaning</figcaption>
+</a>
 </figure>
 </label>
 </li>
@@ -112,7 +118,9 @@
 <label for="cover-4">
 <figure class="album-cover">
 <img src="https://dynamic.indigoimages.ca/books/0735253307.jpg?altimages=false&scaleup=true&maxheight=515&width=380&quality=85&sale=16&lang=en">
-<figcaption class="album-name">The Handmaid's Tale</figcaption>
+<a href="https://www.sparknotes.com/lit/handmaid/summary/">
+    <figcaption class="album-name">The Handmaid's Tale</figcaption>
+</a>
 </figure>
 </label>
 </li>
@@ -122,7 +130,9 @@
 <label for="cover-5">
 <figure class="album-cover">
 <img src="https://media.bloomsbury.com/rep/bj/9781350033221.jpg">
+<a href="https://www.sparknotes.com/lit/the-kite-runner/summary/">
 <figcaption class="album-name">The Kite Runner</figcaption>
+</a>
 </figure>
 </label>
 </li>
@@ -132,7 +142,9 @@
 <label for="cover-6">
 <figure class="album-cover">
 <img src="https://images-na.ssl-images-amazon.com/images/I/41-2DNxyKyL._SX351_BO1,204,203,200_.jpg">
-<figcaption class="album-name">Shoe Dog</figcaption>
+<a href="https://medium.com/mbreads/shoe-dog-a-memoir-by-the-creator-of-nike-a3d45d069ed7" >
+    <figcaption class="album-name">Shoe Dog</figcaption>
+</a>
 </figure>
 </label>
 </li>
@@ -143,8 +155,11 @@
 <label for="cover-7">
 <figure class="album-cover">
 <img src="https://www.chestnuthilllocal.com/wp-content/uploads/2019/03/Column_Gilmore.jpg">
-<figcaption class="album-name">Educated : A Memoir </figcaption>
+<a href="http://www.supersummary.com/educated-a-memoir/summary/">
+    <figcaption class="album-name">Educated : A Memoir </figcaption>
+</a>
 </figure>
+
 </label>
 </li>
 </ol>
@@ -259,6 +274,70 @@
 
 </div>
 </div>
+<!-- Slideshow container -->
+<div class="slideshow-container">
+
+  <!-- Full-width images with number and caption text -->
+  <div class="mySlides fade">
+    <div class="numbertext">1 / 3</div>
+    <img src="https://officeuno.com/image/cache/catalog/BANNER1-1140x380.jpg">
+    <div class="text">Shop your necessary stationery items</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">2 / 3</div>
+    <img src="https://officeuno.com/image/cache/catalog/banner%207-1140x380.jpg">
+    <div class="text">From a variety of options</div>
+  </div>
+
+  <div class="mySlides fade">
+    <div class="numbertext">3 / 3</div>
+    <img src="https://officeuno.com/image/cache/catalog/BANNER3-1140x380.jpg">
+    <div class="text">At reduced price</div>
+  </div>
+
+  <!-- Next and previous buttons -->
+  <a class="prev" onclick="plusSlides(-1)">&#10094;</a>
+  <a class="next" onclick="plusSlides(1)">&#10095;</a>
+</div>
+<br>
+
+<!-- The dots/circles -->
+<div style="text-align:center">
+  <span class="dot" onclick="currentSlide(1)"></span>
+  <span class="dot" onclick="currentSlide(2)"></span>
+  <span class="dot" onclick="currentSlide(3)"></span>
+</div>
+<script>
+var slideIndex = 1;
+showSlides(slideIndex);
+
+// Next/previous controls
+function plusSlides(n) {
+  showSlides(slideIndex += n);
+}
+
+// Thumbnail image controls
+function currentSlide(n) {
+  showSlides(slideIndex = n);
+}
+
+function showSlides(n) {
+  var i;
+  var slides = document.getElementsByClassName("mySlides");
+  var dots = document.getElementsByClassName("dot");
+  if (n > slides.length) {slideIndex = 1}
+  if (n < 1) {slideIndex = slides.length}
+  for (i = 0; i < slides.length; i++) {
+      slides[i].style.display = "none";
+  }
+  for (i = 0; i < dots.length; i++) {
+      dots[i].className = dots[i].className.replace(" active", "");
+  }
+  slides[slideIndex-1].style.display = "block";
+  dots[slideIndex-1].className += " active";
+}
+</script>
 </body>
 
 </html>

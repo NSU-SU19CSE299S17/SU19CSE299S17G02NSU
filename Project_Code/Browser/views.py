@@ -2,8 +2,6 @@ from django.shortcuts import render
 from django.http import HttpResponse
 from .models import Books
 from django.db.models import Q
-from django.contrib import messages
-from django.http import HttpResponseRedirect
 
 
 # Create your views here.

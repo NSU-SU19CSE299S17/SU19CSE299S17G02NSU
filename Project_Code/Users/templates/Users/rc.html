@@ -50,39 +50,34 @@
 
         </div>
  </div>
-    
+
 
  </div>
 
 <div>
-    <form method="post" action="/Recommender/">
+    <form method="post" action="/rc/">
                     {% csrf_token %}
 
                     <div class=" form-group wrap ">
-                        <div class="search">
-                             <input type = "text" name="srh" class="form-control searchTerm " placeholder="enter">
-                        </div>
 
-                             <button type="submit" > Search </button>
+                             <button name="srh" type="submit" > Search </button>
                     </div>
 
                  </form>
 
+
     <br> <br> <br> <br><br>
 
                 <div style=" padding: 60px">
-                    {% if sr %}
-                    {{ sr }}
-                       <!--{% for k in sr %}
-                          {{ sr }}
-                       #{% endfor %}   -->
-
+                    {% if f %}
+                    {{ f }}
                     {% endif %}
 
                 </div>
 
 
 </div>
+
 
 
 </body>

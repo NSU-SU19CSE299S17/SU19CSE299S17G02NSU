@@ -27,6 +27,7 @@ class MyLibraryList(models.Model):
     name = models.CharField(max_length=50)
     author = models.CharField(max_length=50)
     genre = models.CharField(max_length=50)
+    bling = models.CharField(max_length=100, default='', null=True)
 
 def __str__(self):
     return self.name

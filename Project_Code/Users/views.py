@@ -1,10 +1,8 @@
 from django.shortcuts import render, redirect
 from django.contrib import messages
 from django.contrib.auth.decorators import login_required
-from django.db.models import Q
-from django.contrib.auth.mixins import LoginRequiredMixin
-from django.views.generic import ListView
-
+from .recommend import customs
+from .recommend import recommend
 from .models import MyLibraryList
 from .forms import UserRegisterForm,  UserUpdateForm, ProfileUpdateForm, MyLibraryUpdateForm
 
@@ -54,32 +52,56 @@ def mylibrary(request):
         Author = request.POST['author']
         Genre = request.POST['genre']
         current_user = request.user
+        bling = recommend(customs(Name))
+
+
 
         if request.user.is_authenticated:
-            f1 = MyLibraryList.objects.create(UserID=current_user, name=Name, author=Author, genre=Genre)
+            f1 = MyLibraryList.objects.create(UserID=current_user, name=Name, author=Author, genre=Genre, bling=bling)
+            temp = MyLibraryList.objects.filter(UserID=request.user)
             context = {
-                'c' : f1
-            }
+                'c' : f1,
+                'obj': temp,
+               }
             return render(request, 'Users/mylibrary.html', context)
         else:
             raise Exception('User doesnt exist')
             return render(request, 'Users/mylibrary.html')
 
     else:
-        return render(request, 'Users/mylibrary.html')
+        temp = MyLibraryList.objects.filter(UserID=request.user)
+        context = {
+            'obj': temp,
+        }
 
-#following  class displays the list of books of the current user
-class viewBooks(LoginRequiredMixin, ListView):
-      model = MyLibraryList
-      template_name = 'Users/MyLibrary.html'
-      context_object_name = 'obj'
+        return render(request, 'Users/mylibrary.html', context)
 
-      def get_queryset(self):
-          current_user = self.request.user
-          obj = MyLibraryList.objects.filter(UserID=current_user)
 
-         # context = {
-            #  'obj': obj
-        #  }
 
-          return obj
+def rc(request):
+    if request.method == 'POST':
+
+        temp = MyLibraryList.objects.filter(UserID=request.user).values_list('name')
+
+        for item in temp:
+           bimbo = item.values()
+
+           dict = {
+              'f' : bimbo
+            }
+
+        return render(request, 'Users/rc.html', dict)
+
+        #if trial:
+          # hold = request.POST['trial']
+          # bing = recommend(customs(hold))
+
+          # context = {
+              # 'obj' : bing
+             #  }
+          # return render(request, 'Users/rc.html', context)
+
+    else:
+        return render(request, 'Users/rc.html')
+        return HttpResponse(template.render(context, request))
+
