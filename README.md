@@ -38,6 +38,10 @@ Technological advancement has open doors to a vast world of information. There a
  
  Here is the homepage
  ![](Documentation/screenshots/Screenshot1.png)
+ Here is the Profile Page
+ ![](Documentation/screenshots/profiless.png)
+
+ 
 
 
 ## Project Description
@@ -83,12 +87,17 @@ As it is a webpage, this product can be used on all desktop and mobile operating
 
 ## Monetization
 
-Bookworm will allow user to register and create their personal library of books read and discover many more in our vast collection. We will monetize this web application by displaying relevant advertisements on the side panels of the website. In order to get rid of these advertisements and use the recommender and other features the user have to pay a monthly subscription. The payment procedure can be done through Bkash or credit card. Users can also donate a certain amount of money for further development of the site or the Bookworm community. These ensures the continuous monetary support for the product.
+Bookworm will allow user to register and create their personal library of books read and discover many more in our vast collection. We will monetize this web application by displaying relevant advertisements on the side panels of the website. In order to get rid of these advertisements and use the recommender and other features the user have to pay a yearly subscription. The payment procedure can be done through Bkash or credit card. Users can also donate a certain amount of money for further development of the site or the Bookworm community. These ensures the continuous monetary support for the product.
 
 ![](Documentation/screenshots/Screenshot2.png)
 
 ## Roadblocks
 1. Federated User Credentials -  Due to time limit we couldnt include the feature of allowing user to register/sign up with their Google or Facebook account
+2. We couldn't implement bkash, Ucash due to lisence barriers. Hence we implemented payment using 3rd party API Stripe.
+
+Payment page looks like this:
+ ![](Documentation/screenshots/paymentss.png)
+
 
 ## Links
 Project repository : [https://github.com/coreprinciple97/SU19CSE299S17G02NSU](https://github.com/coreprinciple97/SU19CSE299S17G02NSU)
