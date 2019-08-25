@@ -45,6 +45,7 @@ INSTALLED_APPS = [
     'django.contrib.staticfiles',
     #'paypal.standard.ipn',
     'payments.apps.PaymentsConfig',
+    'stripe',
 ]
 
 MIDDLEWARE = [
@@ -141,5 +142,5 @@ LOGOUT_REDIRECT_URL = 'home'
 
 MYLIBRARY_REDIRECT_URL = 'mylibrary'
 
-STRIPE_SECRET_KEY = '<sk_test_HL3110d4EYc1tlcS0wojkpJA00y0yIJ0lQ>'
-STRIPE_PUBLISHABLE_KEY = '<pk_test_PVWR47lZNxEYslSVR9k3g9PB00JenNa0As>'
+STRIPE_SECRET_KEY = 'sk_test_HL3110d4EYc1tlcS0wojkpJA00y0yIJ0lQ'
+STRIPE_PUBLISHABLE_KEY = 'pk_test_PVWR47lZNxEYslSVR9k3g9PB00JenNa0As'

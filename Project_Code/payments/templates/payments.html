@@ -1,0 +1,60 @@
+{% load static %}
+ <link rel="shortcut icon" href="{%  static 'images/favicon.png' %}">
+      <link rel="stylesheet" type="text/css"  href="{% static 'payments/payments.css' %}">
+
+
+    <link href="//netdna.bootstrapcdn.com/bootstrap/3.0.0/css/bootstrap-glyphicons.css" rel="stylesheet">
+    <!--adding js scripts-->
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.4.1/jquery.min.js"></script>
+   <script src="https://maxcdn.bootstrapcdn.com/bootstrap/3.4.0/js/bootstrap.min.js"></script>
+
+
+<link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/normalize/5.0.0/normalize.min.css">
+
+
+<script>
+        window.console = window.console || function(t) {};
+   </script>
+   <script src="https://cdnjs.cloudflare.com/ajax/libs/prefixfree/1.0.7/prefixfree.min.js"></script>
+   <script>
+       if (document.location.search.match(/type=embed/gi)) {
+             window.parent.postMessage("resize", "*");    }
+   </script>
+
+
+
+</head>
+
+<body>
+
+<div class="header" >
+
+ <div class="navbar navbar-fixed-top navbar-default navbar-inverse ">
+        <div class="container-fluid">
+
+            <div class="navbar-header">
+                <a class="logo" >Bookworm</a>
+            </div>
+        </div>
+ </div>
+</div>
+</body>
+
+
+<!-- {% block extrahead %}
+    <link rel="shortcut icon" href="{% static 'payments/images/favicon.ico'  %}" />
+{% endblock %}
+ -->
+
+<h2>Upgrade to Pro for $5 a Year</h2>
+<form action="{% url 'charge' %}" method="post">
+  {% csrf_token %}
+  <script src="https://checkout.stripe.com/checkout.js" class="stripe-button"
+         data-key="{{ key }}"
+    data-description="A Django Charge"
+    data-amount="500"
+    data-locale="auto">
+
+</script>
+</form>
+<script src="https://js.stripe.com/v3/"></script>
